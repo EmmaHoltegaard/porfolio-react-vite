@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 const ContentWrapperVert = styled.div`
     width: 75%;
     display: flex;

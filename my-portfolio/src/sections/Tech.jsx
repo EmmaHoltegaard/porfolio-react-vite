@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer"
-import ContentWrapperHori from "../components/ContentWrapperHori,js";
+import ContentWrapperHori from "../components/ContentWrapperHori.js";
 
 const Tech = () => {
     return (

@@ -1,0 +1,15 @@
+{
+    "intro": {
+      "title": "Welcome to My Portfolio",
+      "description": "I am a developer passionate about building things."
+    },
+    "tech": {
+      "title": "My Tech Stack",
+      "description": "I work with JavaScript, TypeScript, and modern frameworks."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "email": "Email: myemail@example.com",
+      "phone": "Phone: +45 123 456 789"
+    }
+  }

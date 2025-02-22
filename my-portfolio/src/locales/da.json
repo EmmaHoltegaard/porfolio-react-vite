@@ -1,0 +1,15 @@
+{
+    "intro": {
+      "title": "Velkommen til min portfolio",
+      "description": "Jeg er en udvikler, der brænder for at skabe ting."
+    },
+    "tech": {
+      "title": "Min Tech Stack",
+      "description": "Jeg arbejder med JavaScript, TypeScript og moderne frameworks."
+    },
+    "contact": {
+      "title": "Kontakt mig",
+      "email": "E-mail: myemail@example.com",
+      "phone": "Telefon: +45 123 456 789"
+    }
+  }
