@@ -6,7 +6,8 @@ const SectionTitle = styled.h2`
     font-style: normal;
     font-size: 3.5rem;
     text-align: center;
-    color: ${({ color }) => color || "#772F2F"}
+    color: ${({ color }) => color || "black"};
+    background: ${({ bg }) => bg || "none"}
 `
 
 export default SectionTitle;

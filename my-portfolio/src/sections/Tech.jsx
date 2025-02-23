@@ -6,9 +6,9 @@ import { useTranslation } from "react-i18next";
 
 const Tech = () => {
     return (
-        <SectionContainer bg="#772F2F">
-            <ContentWrapperHori>
-                <SectionTitle color="White">Tech</SectionTitle>
+        <SectionContainer>
+            <ContentWrapperHori bg="#EA362F">
+                <SectionTitle>Tech</SectionTitle>
                 <Text>JavaScript, React, HTML/CSS, Flexbox, Java, Python, Node.js, APIs, mob-programming, pair-programming, GitHub, BitBucket</Text>
             </ContentWrapperHori>
         </SectionContainer>
@@ -21,7 +21,7 @@ const Text = styled.p`
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    color: white;
+    padding: 10px;
 `

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import styled from "styled-components";
 
 const LanguageSwitcher = () => {
     const { i18n } = useTranslation();
@@ -8,10 +9,44 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <button onClick={toggleLanguage}>
-            {i18n.language === "en" ? "Da" : "Eng"}
-        </button>
+        <Wrapper>
+            <Button onClick={toggleLanguage}>
+                {i18n.language === "en" ? "DA" : "ENG"}
+            </Button>
+        </Wrapper>
     )
 }
 
 export default LanguageSwitcher;
+
+const Button = styled.button`
+    padding: 10px 20px;
+    background: black;
+    color: #f9edf6;
+    border: none;S
+    font-size: 0.8em;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: border 0.1s ease-in-out, padding 0.1s ease-in-out;
+
+
+    &:hover {
+    border-right: 7px solid #EA362F;
+    border-bottom: 7px solid #EA362F;
+    padding: 10px 18px; /* Slight padding change to prevent jump effect */
+
+    }
+    
+`
+
+const Wrapper = styled.div`
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: blue dotted 1px;
+`

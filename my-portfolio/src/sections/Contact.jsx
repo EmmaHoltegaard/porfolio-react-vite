@@ -4,7 +4,7 @@ import ContentWrapperHori from "../components/ContentWrapperHori.js";
 
 const Contact = () => {
     return (
-        <SectionContainer bg="white">
+        <SectionContainer>
             <ContentWrapperHori>
                 <h1>Contact</h1>
                 <p>This is where the Contact will go</p>

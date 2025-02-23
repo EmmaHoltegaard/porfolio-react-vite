@@ -8,7 +8,7 @@ const Intro = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer bg="white">
+        <SectionContainer>
             <LanguageSwitcherWrapper>
                 <LanguageSwitcher />
             </LanguageSwitcherWrapper>
@@ -61,6 +61,7 @@ const TopWrapper = styled.div`
       font-style: normal;
       font-size: 4rem;
       text-align: center;
+      color: #white;
     }
 `
 
@@ -69,7 +70,7 @@ const CenterWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 0px 0px;
 `
 
 const BottomWrapper = styled.div`

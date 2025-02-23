@@ -7,9 +7,9 @@ import { useTranslation } from "react-i18next";
 const Skills = () => {
     const { t } = useTranslation();
     return (
-        <SectionContainer bg="#772F2F">
-            <ContentWrapperHori>
-                <SectionTitle color="white">{t("skills.title")}</SectionTitle>
+        <SectionContainer>
+            <ContentWrapperHori bg="#FEBFCB">
+                <SectionTitle>{t("skills.title")}</SectionTitle>
                 <p>This is where the Skills will go</p>
             </ContentWrapperHori>
         </SectionContainer>
