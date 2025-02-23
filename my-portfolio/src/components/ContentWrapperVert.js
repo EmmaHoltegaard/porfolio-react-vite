@@ -6,7 +6,7 @@ const ContentWrapperVert = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 80px 20px;
+    //padding: 80px 20px;
 `
 
 export default ContentWrapperVert

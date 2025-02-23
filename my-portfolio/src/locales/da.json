@@ -1,15 +1,53 @@
 {
-    "intro": {
-      "title": "Velkommen til min portfolio",
-      "description": "Jeg er en udvikler, der brænder for at skabe ting."
+  "intro": {
+    "teaser": "Fullstack Udvikler med baggrund som underviser",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc."
+  },
+  "tech": {
+    "title": "Tech"
+  },
+  "projects": {
+    "title": "Udvalgte projekter",
+    "1": {
+      "title": "Projekt 1",
+      "description": "..",
+      "code": "View code",
+      "more": "Read more"
     },
-    "tech": {
-      "title": "Min Tech Stack",
-      "description": "Jeg arbejder med JavaScript, TypeScript og moderne frameworks."
+    "2": {
+      "title": "Projekt 2",
+      "description": "..",
+      "code": "View code",
+      "more": "Read more"
     },
-    "contact": {
-      "title": "Kontakt mig",
-      "email": "E-mail: myemail@example.com",
-      "phone": "Telefon: +45 123 456 789"
+    "3": {
+      "title": "Projekt 3",
+      "description": "..",
+      "code": "View code",
+      "more": "Read more"
+    },
+    "4": {
+      "title": "Projekt 4",
+      "description": "..",
+      "code": "View code",
+      "more": "Read more"
+    },
+    "5": {
+      "title": "Projekt 5",
+      "description": "..",
+      "code": "View code",
+      "more": "Read more"
     }
+  },
+  "skills": {
+    "title": "Kompetencer",
+    "code": "Kode",
+    "toolbox": "Værktøjer",
+    "upcoming": "Kommende",
+    "more": "Mere",
+    "more-content": ["Kommunikation", "Uddannelse", "Tekstforfatning"]
+  },
+  "contact": {
+    "call": "Lad os snakke"
   }
+}

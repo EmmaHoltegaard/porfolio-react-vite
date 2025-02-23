@@ -1,15 +1,53 @@
 {
     "intro": {
-      "title": "Welcome to My Portfolio",
-      "description": "I am a developer passionate about building things."
+      "teaser": "Fullstack Developer with a Background in Education",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc."
     },
     "tech": {
-      "title": "My Tech Stack",
-      "description": "I work with JavaScript, TypeScript, and modern frameworks."
+      "title": "Tech"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "1": {
+        "title": "Projekt 1",
+        "description": "..",
+        "code": "View code",
+        "more": "Read more"
+      },
+      "2": {
+        "title": "Projekt 2",
+        "description": "..",
+        "code": "View code",
+        "more": "Read more"
+      },
+      "3": {
+        "title": "Projekt 3",
+        "description": "..",
+        "code": "View code",
+        "more": "Read more"
+      },
+      "4": {
+        "title": "Projekt 4",
+        "description": "..",
+        "code": "View code",
+        "more": "Read more"
+      },
+      "5": {
+        "title": "Projekt 5",
+        "description": "..",
+        "code": "View code",
+        "more": "Read more"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "code": "Code",
+      "toolbox": "Toolbox",
+      "upcoming": "Upcoming",
+      "more": "More",
+      "more-content": ["Communication", "Education", "Academic Writing"]
     },
     "contact": {
-      "title": "Contact Me",
-      "email": "Email: myemail@example.com",
-      "phone": "Phone: +45 123 456 789"
+      "call": "Let's talk"
     }
   }
