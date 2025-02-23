@@ -23,7 +23,7 @@ const Button = styled.button`
     padding: 10px 20px;
     background: black;
     color: #f9edf6;
-    border: none;S
+    border: none;
     font-size: 0.8em;
     border-radius: 10px;
     font-family: "Poppins", serif;
@@ -33,8 +33,8 @@ const Button = styled.button`
 
 
     &:hover {
-    border-right: 7px solid #EA362F;
-    border-bottom: 7px solid #EA362F;
+    border-right: 7px solid #BDB153;
+    border-bottom: 7px solid #BDB153;
     padding: 10px 18px; /* Slight padding change to prevent jump effect */
 
     }
@@ -48,5 +48,5 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: blue dotted 1px;
+    //border: blue dotted 1px;
 `

@@ -3,12 +3,15 @@ import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer";
 import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
+import FadeInSection from "../components/FadeInSection.jsx";
+
 
 const Intro = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer>
+        <FadeInSection>
+        <SectionContainer height="70vh">
             <LanguageSwitcherWrapper>
                 <LanguageSwitcher />
             </LanguageSwitcherWrapper>
@@ -18,15 +21,20 @@ const Intro = () => {
                     <h2>Emma Holtegaard</h2>
                     <p>{t("intro.teaser")}</p>
                 </TopWrapper>
-                <CenterWrapper>
-                    <p>billede</p>
-                </CenterWrapper>
                 <BottomWrapper>
                     <p>{t("intro.bio")}</p>
-                    <p>indsæt ikoner her</p>
+                    <IconWrapper>
+                        <a href="https://www.linkedin.com/in/emmaholtegaard/" target="_blank" rel="noopener noreferrer">
+                        <Icon src="/icons/linkedin.svg" alt="LinkedIn"/>
+                        </a>
+                        <a href="https://github.com/EmmaHoltegaard/" target="_blank" rel="noopener noreferrer">
+                        <Icon src="/icons/github.svg" alt="Github"/>
+                        </a>
+                    </IconWrapper>
                 </BottomWrapper>
             </ContentWrapperHori>
         </SectionContainer>
+    </FadeInSection>
     )
 }
 
@@ -36,7 +44,7 @@ const LanguageSwitcherWrapper = styled.div`
     display: flex;
     width: 75%;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     padding: 10px 0px;
     //border: 2px solid green;
@@ -52,16 +60,15 @@ const TopWrapper = styled.div`
     h1, p {
       font-weight: 500;
       font-style: normal;
-      font-size: 1.1rem;
+      font-size: 1.7rem;
       text-align: center;
     }
 
     h2 {
       font-weight: 700;
       font-style: normal;
-      font-size: 4rem;
+      font-size: 5rem;
       text-align: center;
-      color: #white;
     }
 `
 
@@ -78,15 +85,30 @@ const BottomWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     max-width: 80%;
     font-family: "Poppins", serif;
-
+    margin-top: 60px;
     
     p {
       font-weight: 500;
       font-style: normal;
-      font-size: 1.1rem;
-      text-align: center;
+      font-size: 1.125rem;
+      text-align: justify;
+      margin-bottom: 30px;
+      max-width: 750px;
     }
 `
+
+const IconWrapper = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    //border: 2px black dotted;
+    gap: 20px;
+`
+
+const Icon = styled.img`
+    width: 35px;
+    height: 35px;
+   // border: pink dotted 2px;
+    `

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const ContentWrapperHori = styled.div`
     width: 75%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;

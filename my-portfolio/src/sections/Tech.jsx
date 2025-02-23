@@ -3,14 +3,17 @@ import SectionContainer from "../components/SectionContainer"
 import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import SectionTitle from "../components/SectionTitle.js";
 import { useTranslation } from "react-i18next";
+import FadeInSection from "../components/FadeInSection.jsx";
 
 const Tech = () => {
     return (
-        <SectionContainer>
-            <ContentWrapperHori bg="#EA362F">
-                <SectionTitle>Tech</SectionTitle>
-                <Text>JavaScript, React, HTML/CSS, Flexbox, Java, Python, Node.js, APIs, mob-programming, pair-programming, GitHub, BitBucket</Text>
-            </ContentWrapperHori>
+        <SectionContainer bg="#BDB153">
+            <FadeInSection>
+                <ContentWrapperHori>
+                    <SectionTitle>Tech</SectionTitle>
+                    <Text>JavaScript, React, HTML/CSS, Flexbox, Node.js, APIs, Java, Python, mob-programming, pair-programming, GitHub, BitBucket</Text>
+                </ContentWrapperHori>
+            </FadeInSection>
         </SectionContainer>
     )
 }
@@ -24,4 +27,5 @@ const Text = styled.p`
     font-size: 1.2rem;
     text-align: center;
     padding: 10px;
+    max-width: 850px;
 `
