@@ -18,3 +18,11 @@ const Contact = () => {
 }
 
 export default Contact;
+
+const ProjectListWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted red;
+    gap: 25px;
+`

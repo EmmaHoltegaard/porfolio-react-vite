@@ -85,7 +85,6 @@ const BottomWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
     font-family: "Poppins", serif;
     margin-top: 60px;
     
@@ -94,7 +93,8 @@ const BottomWrapper = styled.div`
       font-style: normal;
       font-size: 1.125rem;
       text-align: justify;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
+      width: 90%;
       max-width: 750px;
     }
 `
@@ -110,5 +110,12 @@ const IconWrapper = styled.div`
 const Icon = styled.img`
     width: 35px;
     height: 35px;
-   // border: pink dotted 2px;
+    //border: pink dotted 2px;
+    transition: transform 0.2s ease-in-out;
+    
+    &:hover {
+    transform: scale(1.1); /* Slightly enlarge */
+    }
+   
+
     `

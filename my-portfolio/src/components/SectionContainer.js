@@ -7,7 +7,7 @@ const SectionContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 40px 20px 40px 20px;
+    padding: 30px 20px 30px 20px;
     //border: dotted purple 2px;
     background: ${({ bg }) => bg || "#E4EDED"}
 `

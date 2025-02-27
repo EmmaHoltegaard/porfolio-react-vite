@@ -7,37 +7,46 @@
     "title": "Tech"
   },
   "projects": {
-    "title": "Udvalgte projekter",
-    "1": {
-      "title": "Projekt 1",
-      "description": "..",
-      "code": "View code",
-      "more": "Read more"
-    },
-    "2": {
-      "title": "Projekt 2",
-      "description": "..",
-      "code": "View code",
-      "more": "Read more"
-    },
-    "3": {
-      "title": "Projekt 3",
-      "description": "..",
-      "code": "View code",
-      "more": "Read more"
-    },
-    "4": {
-      "title": "Projekt 4",
-      "description": "..",
-      "code": "View code",
-      "more": "Read more"
-    },
-    "5": {
-      "title": "Projekt 5",
-      "description": "..",
-      "code": "View code",
-      "more": "Read more"
-    }
+    "title": "Featured Projects",
+    "titleAll": "Projects",
+    "more": "Flere Projects",
+    "projectList": [
+      {
+        "title": "Project 1",
+        "labels": ["HTML", "React", "CSS"],
+        "description": "..",
+        "code": "View code",
+        "demo": "Live Demo"
+      },
+      {
+        "title": "Project 2",
+        "labels": ["HTML", "React", "CSS"],
+        "description": "..",
+        "code": "View code",
+        "demo": "Live Demo"
+      },
+      {
+        "title": "Project 3",
+        "labels": ["HTML", "React", "CSS"],
+        "description": ".."
+      },
+      {
+        "title": "Project 4",
+        "labels": ["HTML", "React", "CSS"],
+        "description": "..",
+        "code": "View code"
+      },
+      {
+        "title": "Project 5",
+        "labels": ["HTML", "React", "CSS"],
+        "description": ".."
+      },
+      {
+        "title": "Project 6",
+        "labels": ["HTML", "React", "CSS"],
+        "description": ".."
+      }
+    ]
   },
   "skills": {
     "title": "Kompetencer",

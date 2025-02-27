@@ -20,22 +20,22 @@ const LanguageSwitcher = () => {
 export default LanguageSwitcher;
 
 const Button = styled.button`
-    padding: 10px 20px;
-    background: black;
+    padding: 8px 16px;
+    background: #2d2b2b;
     color: #f9edf6;
     border: none;
-    font-size: 0.8em;
-    border-radius: 10px;
+    font-size: 0.7em;
+    border-radius: 13px;
     font-family: "Poppins", serif;
     font-weight: 400;
     cursor: pointer;
-    transition: border 0.1s ease-in-out, padding 0.1s ease-in-out;
+    transition: border 0.2s ease-in-out, padding 0.2s ease-in-out;
 
 
     &:hover {
-    border-right: 7px solid #BDB153;
-    border-bottom: 7px solid #BDB153;
-    padding: 10px 18px; /* Slight padding change to prevent jump effect */
+    border-right: 3px solid #BDB153;
+    border-bottom: 5px solid #BDB153;
+    //padding: 10px 18px; /* Slight padding change to prevent jump effect */
 
     }
     
@@ -48,5 +48,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
     //border: blue dotted 1px;
 `

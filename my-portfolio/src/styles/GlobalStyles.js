@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         margin: 0;
+        box-sizing: border-box;
     }
 
     body {
@@ -16,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
         justify-content: center;
         color: #2d2b2b;
+        background: #E4EDED;
     }
 `
 

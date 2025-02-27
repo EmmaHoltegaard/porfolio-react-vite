@@ -1,21 +1,20 @@
-import Intro from './sections/Intro'
-import Tech from './sections/Tech'
-import Skills from './sections/Skills'
-import FeaturedProjects from './sections/FeaturedProjects'
-import Contact from './sections/Contact'
 import GlobalStyles from './styles/GlobalStyles'
-import FadeInSection from "./components/FadeInSection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from './pages/landing'
+import ProjectsPage from './pages/ProjectsPage'
+
 
 function App() {
 
   return (
     <>
       <GlobalStyles />
-      <FadeInSection><Intro /></FadeInSection>
-      <FadeInSection><Tech /></FadeInSection>
-      <FadeInSection><FeaturedProjects /></FadeInSection>
-      <FadeInSection><Skills /></FadeInSection>
-      <FadeInSection><Contact /></FadeInSection>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }
