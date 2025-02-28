@@ -4,14 +4,18 @@ import SectionContainer from "../components/SectionContainer";
 import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import FadeInSection from "../components/FadeInSection.jsx";
+import IconBar from "../components/IconBar.jsx";
+import Background from "../assets/background.png"
+import ContentWrapperVert from "../components/ContentWrapperVert.js";
 
 
 const Intro = () => {
     const { t } = useTranslation();
 
     return (
-        <FadeInSection>
-        <SectionContainer height="70vh">
+        <IntroSectionContainer>
+            <FadeInSection>
+            <ContentWrapperHori>
             <LanguageSwitcherWrapper>
                 <LanguageSwitcher />
             </LanguageSwitcherWrapper>
@@ -23,22 +27,31 @@ const Intro = () => {
                 </TopWrapper>
                 <BottomWrapper>
                     <p>{t("intro.bio")}</p>
-                    <IconWrapper>
-                        <a href="https://www.linkedin.com/in/emmaholtegaard/" target="_blank" rel="noopener noreferrer">
-                        <Icon src="/icons/linkedin.svg" alt="LinkedIn"/>
-                        </a>
-                        <a href="https://github.com/EmmaHoltegaard/" target="_blank" rel="noopener noreferrer">
-                        <Icon src="/icons/github.svg" alt="Github"/>
-                        </a>
-                    </IconWrapper>
+                    <IconBar />
                 </BottomWrapper>
             </ContentWrapperHori>
-        </SectionContainer>
-    </FadeInSection>
+            </ContentWrapperHori>
+            </FadeInSection>
+        </IntroSectionContainer>
     )
 }
 
 export default Intro;
+
+const IntroSectionContainer = styled.section`
+  background: #BDB153;
+  background-image: url(${Background});
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100vw;
+  min-height: 70vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 20px 30px 20px;
+  //border: dotted purple 2px;
+`
 
 const LanguageSwitcherWrapper = styled.div`
     display: flex;
@@ -60,15 +73,18 @@ const TopWrapper = styled.div`
     h1, p {
       font-weight: 500;
       font-style: normal;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       text-align: center;
+      padding-bottom: 7px;
     }
 
     h2 {
       font-weight: 700;
       font-style: normal;
-      font-size: 5rem;
+      font-size: 4rem;
       text-align: center;
+      line-height: 1;
+      margin-bottom: 15px;
     }
 `
 
@@ -87,6 +103,7 @@ const BottomWrapper = styled.div`
     justify-content: center;
     font-family: "Poppins", serif;
     margin-top: 60px;
+    margin-bottom: 60px;
     
     p {
       font-weight: 500;
@@ -98,24 +115,3 @@ const BottomWrapper = styled.div`
       max-width: 750px;
     }
 `
-
-const IconWrapper = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    //border: 2px black dotted;
-    gap: 20px;
-`
-
-const Icon = styled.img`
-    width: 35px;
-    height: 35px;
-    //border: pink dotted 2px;
-    transition: transform 0.2s ease-in-out;
-    
-    &:hover {
-    transform: scale(1.1); /* Slightly enlarge */
-    }
-   
-
-    `

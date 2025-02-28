@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 
 const FeaturedProjects = () => {
     const { t } = useTranslation();
-    const n = 4; // Number of project to display
+    const n = 5; // Number of project to display
     const projectsList = t("projects.projectList", { returnObjects: true }).slice(0, n); //returns array of projects (only first n)
 
     return (
@@ -33,7 +33,7 @@ const FeaturedProjects = () => {
                         } 
                     </ProjectListWrapper>
                     <ButtonWrapper>
-                        <Link to="/projects" target="_blank" rel="noopener noreferrer"><MoreButton>{t("projects.more")}<Icon src="/icons/arrowblack.png" /></MoreButton></Link>
+                        {/*<StyledLink to="/projects" target="_blank" rel="noopener noreferrer"><MoreButton>{t("projects.more")}<Icon src="/icons/arrowblack.png" /></MoreButton></StyledLink>*/}
                     </ButtonWrapper>
                 </ContentWrapperHori>
             </FadeInSection>
@@ -65,14 +65,16 @@ const MoreButton = styled.button`
     // background: #2d2b2b;
     // color: #E4EDED;
     color: #2d2b2b;
-    background: #BDB153;
+    border: #2d2b2b 2px solid;
+    //background: #BDB153;
+    background: #E4EDED;
     border-radius: 10px;
     font-size: 1.2rem;
     padding: 15px 25px;
     font-weight: bold;
     cursor: pointer;
-    border: none;
-    transition: border 0.1s ease-in-out;
+    //border: none;
+    transition: border 0.2s ease-in-out;
     font-family: "Poppins", serif;
     display: flex;
     align-items: center;
@@ -80,13 +82,18 @@ const MoreButton = styled.button`
 
 
     &:hover {
-        border-right: 3px solid #2d2b2b;
-        border-bottom: 4px solid #2d2b2b;
+        //border-right: 3px solid #2d2b2b;
+        //border-bottom: 4px solid #2d2b2b;
+        border: 3px solid #2d2b2b;
     }
 `
 
+const StyledLink = styled(Link)`
+   text-decoration: none;
+`
+
 const Icon = styled.img`
-height: 25px;
-width: 25px;
-transform: rotate(180deg)
+    height: 25px;
+    width: 25px;
+    transform: rotate(180deg)
 `

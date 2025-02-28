@@ -9,40 +9,55 @@
   "projects": {
     "title": "Featured Projects",
     "titleAll": "Projects",
-    "more": "Flere Projects",
+    "more": "Flere projekter",
     "projectList": [
       {
-        "title": "Project 1",
+        "title": "Normfri Terapi",
+        "image": "/projects/normfri.JPG",
         "labels": ["HTML", "React", "CSS"],
-        "description": "..",
+        "description": "Jeg har designet og udviklet en React hjemmeside for virksomheden Normfri Terapi. \nMålet var at skabe et design, der afspejler virksomhedens farverige og alternative identitet, samt en følelse af ro. Hjemmesiden kombinerer et unikt visuelt udtryk med en brugervenlig struktur, hvilket gør den både iøjnefaldende og funktionel. Dette projekt har også implementeret React Router og Styled Components.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/norm-fri",
+        "demo": "Se demo",
+        "demoLink": "https://normfriterapi.dk/"
+      },
+      {
+        "title": "Simpel to-do app",
+        "image": "/projects/todo.PNG",
+        "labels": ["HTML", "CSS", "React", "Redux"],
+        "description": "Dette projekt er en React-baseret to-do-applikation udviklet med Redux til state management. Mens det primære mål var at få praktisk erfaring med Redux og håndtering af global state i React, havde jeg også fokus på det visuelle udtryk og nød at designe en bullet journal-inspireret UI med CSS.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/project-todos",
+        "demo": "Se demo",
+        "demoLink": "https://spectacular-sunflower-bab07b.netlify.app/"
+      },
+      {
+        "title": "EcoHour",
+        "image": "/projects/ecohour.png",
+        "labels": ["Java",  "Android", "API calls"],
+        "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+      },
+      {
+        "title": "Grounding chatbot",
+        "image": "/projects/chatbot.png",
+        "labels": ["HTML", "CSS", "JavaScript"],
+        "description": "Som mit allerførste JavaScript-projekt var hovedfokus at lære de grundlæggende principper i JavaScript samt at deploye en webapplikation. Denne chatbot er designet til at vejlede brugere gennem grounding-teknikker for at fremme ro og mindfulness. Den anvender betingede statements og event listeners til at behandle brugerinput og levere svar i realtid.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/project-chatbot",
+        "demo": "Se demo",
+        "demoLink": "https://grounding-chatbot.netlify.app/"
+      },
+      {
+        "title": "Portfolio website",
+        "image": "/projects/portfolio2.png",
+        "labels": ["HTML", "CSS", "JavaScript", "React", "Vite"],
+        "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et eksperiment i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
         "code": "View code",
-        "demo": "Live Demo"
+        "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
       },
       {
-        "title": "Project 2",
-        "labels": ["HTML", "React", "CSS"],
-        "description": "..",
-        "code": "View code",
-        "demo": "Live Demo"
-      },
-      {
-        "title": "Project 3",
-        "labels": ["HTML", "React", "CSS"],
-        "description": ".."
-      },
-      {
-        "title": "Project 4",
-        "labels": ["HTML", "React", "CSS"],
-        "description": "..",
-        "code": "View code"
-      },
-      {
-        "title": "Project 5",
-        "labels": ["HTML", "React", "CSS"],
-        "description": ".."
-      },
-      {
-        "title": "Project 6",
+        "title": "Projekt 6",
+        "image": "/projects/placeholder.jpg",
         "labels": ["HTML", "React", "CSS"],
         "description": ".."
       }
@@ -54,7 +69,7 @@
     "toolbox": "Værktøjer",
     "upcoming": "Kommende",
     "more": "Mere",
-    "more-content": ["Kommunikation", "Uddannelse", "Tekstforfatning"]
+    "moreContent": ["Kommunikation", "Uddannelse", "Tekstforfatning"]
   },
   "contact": {
     "call": "Lad os snakke"

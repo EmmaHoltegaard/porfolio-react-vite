@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ContentWrapperVert = styled.div`
-    width: 75%;
+    width: 80%;
     max-width: 1200px;
     display: flex;
     flex-direction: row;

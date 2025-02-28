@@ -10,7 +10,7 @@ const Tech = () => {
         <SectionContainer bg="#BDB153">
             <FadeInSection>
                 <ContentWrapperHori>
-                    <SectionTitle>Tech</SectionTitle>
+                    <SectionTitle>Tech Stack</SectionTitle>
                     <Text>JavaScript, React, HTML/CSS, Flexbox, Node.js, APIs, Java, Python, mob-programming, pair-programming, GitHub, BitBucket</Text>
                 </ContentWrapperHori>
             </FadeInSection>

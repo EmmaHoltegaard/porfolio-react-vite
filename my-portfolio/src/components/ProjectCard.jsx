@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectCard = ({ title, image, labels, description, code, demo }) => {
+const ProjectCard = ({ title, image, labels, description, code, codeLink, demo, demoLink }) => {
     return(
         <OuterContainer>
             <ImageWrapper><Image src={image}/></ImageWrapper>
@@ -18,8 +18,8 @@ const ProjectCard = ({ title, image, labels, description, code, demo }) => {
                     </Text>
                 </InnerInfoWrapperTop>
                 <ButtonsWrapper>
-                {code && <ButtonWrapper><Button>{code}</Button></ButtonWrapper>}  {/* Render only if `code` exists */}
-                {demo && <ButtonWrapper><Button>{demo}</Button></ButtonWrapper>}  {/* Render only if `demo` exists */}
+                {code && <ButtonWrapper><a href={codeLink}><Button>{code}</Button></a></ButtonWrapper>}  {/* Render only if `code` exists */}
+                {demo && <ButtonWrapper><a href={demoLink}><Button>{demo}</Button></a></ButtonWrapper>}  {/* Render only if `demo` exists */}
             </ButtonsWrapper>
             </InfoWrapper>
         </OuterContainer>
@@ -80,16 +80,20 @@ const LabelWrapper = styled.div`
 
 
 const Label = styled.p`
-    background: #2d2b2b;
-    color: #E4EDED;
+    //background: #2d2b2b;
+    //color: #E4EDED;
+    color: #2d2b2b;
+    background: #E4EDED;
+    border: 2px solid #2d2b2b;
     border-radius: 5px;
     font-size: 0.8rem;
+    font-weight: bold;
     padding: 3px 10px;
 `
 
 const Text = styled.div`
     //border: 2px, pink, dotted;
-    padding: 20px 0px 30px 0px;
+    padding: 30px 0px 30px 0px;
 
     h3 {
         font-size: 1.2rem;
@@ -133,7 +137,6 @@ const Button = styled.button`
     border: none;
     transition: border 0.2s ease-in-out;
     font-family: "Poppins", serif;
-
 
     &:hover {
         border-right: 3px solid #BDB153;

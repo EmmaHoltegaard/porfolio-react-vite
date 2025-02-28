@@ -26,7 +26,9 @@ const ProjectsPage = () => {
                                 labels={project.labels}
                                 description={project.description}
                                 code={project.code}
+                                codeLink={project.codeLink}
                                 demo={project.demo}
+                                demoLink={project.demoLink}
                             />
                             ))
                         } 
