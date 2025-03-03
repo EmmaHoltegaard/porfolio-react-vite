@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer"
-import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import SectionTitle from "../components/SectionTitle.js";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/FadeInSection.jsx";
+import ContentWrapperVert from "../components/ContentWrapperVert.js";
 
 const Skills = () => {
     const { t } = useTranslation();
@@ -15,7 +15,7 @@ const Skills = () => {
     return (
         <SectionContainer bg="#BDB153">
             <FadeInSection>
-                <ContentWrapperHori>
+                <ContentWrapperVert>
                     <SectionTitle>{t("skills.title")}</SectionTitle>
                     <OuterWrapper>
 
@@ -63,7 +63,7 @@ const Skills = () => {
                             </SkillList>
                         </SkillSection>
                     </OuterWrapper>
-                </ContentWrapperHori>
+                </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
     )

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer"
-import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import SectionTitle from "../components/SectionTitle.js";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/FadeInSection.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 import { Link } from "react-router-dom"
+import ContentWrapperVert from "../components/ContentWrapperVert.js";
 
 const FeaturedProjects = () => {
     const { t } = useTranslation();
@@ -15,7 +15,7 @@ const FeaturedProjects = () => {
     return (
         <SectionContainer>
             <FadeInSection>
-                <ContentWrapperHori>
+                <ContentWrapperVert>
                     <SectionTitle>{t("projects.title")}</SectionTitle>
                     <ProjectListWrapper>
                         {/* Map over array of projects, and call ProjectCard for each + pass projectinfo as props */}
@@ -33,15 +33,16 @@ const FeaturedProjects = () => {
                         } 
                     </ProjectListWrapper>
                     <ButtonWrapper>
-                        {/*<StyledLink to="/projects" target="_blank" rel="noopener noreferrer"><MoreButton>{t("projects.more")}<Icon src="/icons/arrowblack.png" /></MoreButton></StyledLink>*/}
+                        <StyledLink to="/projects" target="_blank" rel="noopener noreferrer"><MoreButton>{t("projects.more")}<Icon src="/icons/arrowblack.png" /></MoreButton></StyledLink>
                     </ButtonWrapper>
-                </ContentWrapperHori>
+                </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
     )
 }
 
 export default FeaturedProjects;
+
 
 const ProjectListWrapper = styled.div`
     width: 100%;

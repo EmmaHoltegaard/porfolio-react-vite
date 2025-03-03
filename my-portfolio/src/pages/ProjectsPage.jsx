@@ -1,7 +1,7 @@
 import SectionTitle from "../components/SectionTitle"
 import SectionContainer from "../components/SectionContainer";
 import FadeInSection from "../components/FadeInSection";
-import ContentWrapperHori from "../components/ContentWrapperHori";
+import ContentWrapperVert from "../components/ContentWrapperVert";
 import ProjectCard from "../components/ProjectCard";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -14,7 +14,7 @@ const ProjectsPage = () => {
     return(
         <SectionContainer>
             <FadeInSection>
-                <ContentWrapperHori>
+                <ContentWrapperVert>
                     <SectionTitle>{t("projects.titleAll")}</SectionTitle>
                     <ProjectListWrapper>
                         {/* Map over array of projects, and call ProjectCard for each + pass projectinfo as props */}
@@ -33,7 +33,7 @@ const ProjectsPage = () => {
                             ))
                         } 
                     </ProjectListWrapper>
-                </ContentWrapperHori>
+                </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
     )
@@ -46,5 +46,5 @@ const ProjectListWrapper = styled.div`
     display: flex;
     flex-direction: column;
     border: 2px dotted red;
-    gap: 25px;
+    gap: 50px;
 `

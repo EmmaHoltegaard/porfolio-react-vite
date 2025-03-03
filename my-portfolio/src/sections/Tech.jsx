@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer"
-import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import SectionTitle from "../components/SectionTitle.js";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/FadeInSection.jsx";
+import ContentWrapperVert from "../components/ContentWrapperVert.js";
 
 const Tech = () => {
     return (
         <SectionContainer bg="#BDB153">
             <FadeInSection>
-                <ContentWrapperHori>
+                <ContentWrapperVert>
                     <SectionTitle>Tech Stack</SectionTitle>
                     <Text>JavaScript, React, HTML/CSS, Flexbox, Node.js, APIs, Java, Python, mob-programming, pair-programming, GitHub, BitBucket</Text>
-                </ContentWrapperHori>
+                </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
     )

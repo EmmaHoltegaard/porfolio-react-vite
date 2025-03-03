@@ -20,7 +20,7 @@ const ProjectCard = ({ title, image, labels, description, code, codeLink, demo, 
                 <ButtonsWrapper>
                 {code && <ButtonWrapper><a href={codeLink}><Button>{code}</Button></a></ButtonWrapper>}  {/* Render only if `code` exists */}
                 {demo && <ButtonWrapper><a href={demoLink}><Button>{demo}</Button></a></ButtonWrapper>}  {/* Render only if `demo` exists */}
-            </ButtonsWrapper>
+                </ButtonsWrapper>
             </InfoWrapper>
         </OuterContainer>
     )
@@ -33,8 +33,13 @@ const OuterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    //border: black dotted 1px;
+    //border: red dotted 3px;
     gap: 25px;
+
+    @media (max-width: 820px) {
+        flex-direction: column;
+    }
+
 `
 
 const ImageWrapper = styled.div`
@@ -47,6 +52,16 @@ const Image = styled.img`
     width: 400px;
     height: 400px;
     object-fit: cover;
+
+    @media (max-width: 1015px) {
+        width: 300px;
+        height: 300px;
+    }
+
+    @media (max-width: 820px) {
+        width: 100%;
+        height: auto;
+    }
 `
 
 const InfoWrapper = styled.div`
@@ -54,10 +69,10 @@ const InfoWrapper = styled.div`
     flex-direction: column;
     //justify-content: center;
     align-items: flex-start;
-    //border: 2px purple pink;
+    //border: 3px dotted blue;
     flex-grow: 1;
     max-width: 100%;
-    min-height: 100%;
+    //min-height: 100%;
     padding: 12px 0px;
 `
 
@@ -73,9 +88,11 @@ const InnerInfoWrapperTop = styled.div`
 
 const LabelWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+
 `
 
 
@@ -86,9 +103,9 @@ const Label = styled.p`
     background: #E4EDED;
     border: 2px solid #2d2b2b;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: bold;
-    padding: 3px 10px;
+    padding: 2px 6px;
 `
 
 const Text = styled.div`
@@ -113,6 +130,11 @@ const ButtonsWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 400px) {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
 `
 
 const ButtonWrapper = styled.div`
@@ -123,7 +145,6 @@ const ButtonWrapper = styled.div`
     justify-content: center;
     //border: red dotted 1px;
 
-    // RESP: Knapperne skal ovenpå hinanden at a certain point
 `
 
 const Button = styled.button`
@@ -135,6 +156,7 @@ const Button = styled.button`
     font-weight: bold;
     cursor: pointer;
     border: none;
+    min-width: 100px;
     transition: border 0.2s ease-in-out;
     font-family: "Poppins", serif;
 
@@ -142,4 +164,5 @@ const Button = styled.button`
         border-right: 3px solid #BDB153;
         border-bottom: 4px solid #BDB153;
     }
+
 `

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SectionContainer from "../components/SectionContainer"
-import ContentWrapperHori from "../components/ContentWrapperHori.js";
+import ContentWrapperVert from "../components/ContentWrapperVert.js";
 import FadeInSection from "../components/FadeInSection.jsx";
 import IconBar from "../components/IconBar.jsx";
 
@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <SectionContainer>
             <FadeInSection>
-                <ContentWrapperHori>
+                <ContentWrapperVert>
                     <UpperContainer>
                         <h2>Let's talk!</h2>
                         <img src="/projects/gul.JPG" />
@@ -21,7 +21,7 @@ const Contact = () => {
                         <a href={`mailto:${user}@${domain}`}>{user}@{domain}</a>
                     </MiddleContainer>
                     <IconBar />
-                </ContentWrapperHori>
+                </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
         

@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import SectionContainer from "../components/SectionContainer";
-import ContentWrapperHori from "../components/ContentWrapperHori.js";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import FadeInSection from "../components/FadeInSection.jsx";
 import IconBar from "../components/IconBar.jsx";
@@ -14,29 +12,42 @@ const Intro = () => {
 
     return (
         <IntroSectionContainer>
-            <FadeInSection>
-            <ContentWrapperHori>
             <LanguageSwitcherWrapper>
                 <LanguageSwitcher />
             </LanguageSwitcherWrapper>
-            <ContentWrapperHori>
-                <TopWrapper>
-                    <h1>Portfolio</h1>
-                    <h2>Emma Holtegaard</h2>
-                    <p>{t("intro.teaser")}</p>
-                </TopWrapper>
-                <BottomWrapper>
-                    <p>{t("intro.bio")}</p>
-                    <IconBar />
-                </BottomWrapper>
-            </ContentWrapperHori>
-            </ContentWrapperHori>
+            <FadeInSection>
+                <IntroContentWrapper>
+                    <ContentWrapperVert>
+                        <TopWrapper>
+                            <h1>Portfolio</h1>
+                            <h2>Emma Holtegaard</h2>
+                            <p>{t("intro.teaser")}</p>
+                        </TopWrapper>
+                        <BottomWrapper>
+                            <p>{t("intro.bio")}</p>
+                            <IconBar />
+                        </BottomWrapper>
+                    </ContentWrapperVert>
+                </IntroContentWrapper>
             </FadeInSection>
         </IntroSectionContainer>
     )
 }
 
 export default Intro;
+
+
+const IntroContentWrapper = styled.div`
+width: 80%;
+max-width: 1200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px 20px;
+border: dotted blue 2px;
+border-radius: 20px;
+`
 
 const IntroSectionContainer = styled.section`
   background: #BDB153;
@@ -49,7 +60,7 @@ const IntroSectionContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px 0px 20px;
   //border: dotted purple 2px;
 `
 
