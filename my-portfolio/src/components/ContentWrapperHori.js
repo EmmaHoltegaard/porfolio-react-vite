@@ -11,12 +11,6 @@ const ContentWrapperHori = styled.div`
     //border: dotted blue 2px;
     background: ${({ bg }) => bg || "none"};
     border-radius: 20px;
-
-    @media (max-width: 580px) {
-        flex-direction: column;
-        gap: 0px;
-        width: 100%;
-    }
 `
 
 export default ContentWrapperHori
