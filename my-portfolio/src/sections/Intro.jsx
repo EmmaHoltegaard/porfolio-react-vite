@@ -12,10 +12,7 @@ const Intro = () => {
 
     return (
         <IntroSectionContainer>
-            <LanguageSwitcherWrapper>
-                <LanguageSwitcher />
-            </LanguageSwitcherWrapper>
-            <FadeInSection>
+            <LanguageSwitcher />
                 <IntroContentWrapper>
                     <ContentWrapperVert>
                         <TopWrapper>
@@ -29,7 +26,6 @@ const Intro = () => {
                         </BottomWrapper>
                     </ContentWrapperVert>
                 </IntroContentWrapper>
-            </FadeInSection>
         </IntroSectionContainer>
     )
 }
@@ -37,25 +33,13 @@ const Intro = () => {
 export default Intro;
 
 
-const IntroContentWrapper = styled.div`
-width: 80%;
-max-width: 1200px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 20px 20px;
-border: dotted blue 2px;
-border-radius: 20px;
-`
-
 const IntroSectionContainer = styled.section`
   background: #BDB153;
   background-image: url(${Background});
   background-size: 100% 100%;
   background-position: center;
   width: 100vw;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex; 
   flex-direction: column;
   align-items: center;
@@ -64,14 +48,24 @@ const IntroSectionContainer = styled.section`
   //border: dotted purple 2px;
 `
 
-const LanguageSwitcherWrapper = styled.div`
-    display: flex;
-    width: 75%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px 0px;
-    //border: 2px solid green;
+const IntroContentWrapper = styled.div`
+width: 80%;
+max-width: 1200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+//border: dotted blue 2px;
+border-radius: 40px;
+background:#E4EDED;
+
+@media (max-width: 500px){
+        width: 90%;
+    }
+
+@media (max-width: 500px){
+    width: 95%;
+}
 `
 
 const TopWrapper = styled.div`
@@ -81,22 +75,32 @@ const TopWrapper = styled.div`
     justify-content: center;
     font-family: "Poppins", serif;
 
+    
     h1, p {
       font-weight: 500;
       font-style: normal;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-align: center;
       padding-bottom: 7px;
     }
 
+    // Name
     h2 {
       font-weight: 700;
       font-style: normal;
-      font-size: 4rem;
+      font-size: 3rem;
       text-align: center;
       line-height: 1;
-      margin-bottom: 15px;
+      margin-bottom: 15px;   
     }
+
+
+    @media (max-width: 420px){
+        h2{
+            font-size: 2rem;
+        }
+      }
+
 `
 
 const CenterWrapper = styled.div`
@@ -113,15 +117,15 @@ const BottomWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-family: "Poppins", serif;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 50px;
     
+    // Decription
     p {
       font-weight: 500;
       font-style: normal;
       font-size: 1.125rem;
       text-align: justify;
-      margin-bottom: 45px;
+      margin-bottom: 55px;
       width: 90%;
       max-width: 750px;
     }

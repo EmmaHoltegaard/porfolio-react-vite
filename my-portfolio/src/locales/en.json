@@ -14,8 +14,8 @@
         {
           "title": "Normfri Terapi",
           "image": "/projects/normfri.JPG",
-          "labels": ["HTML", "CSS", "JavaScript", "React"],
-          "description": "I designed and developed a website for a small business, Normfri Terapi, from scratch using React. \nThe goal was to create a design that reflects the company's colorful and alternative identity, while maintaining a sense of calm. The website combines a unique visual identity with a user-friendly structure, making it both eye-catching and functional. This project is also implemented React Router and Styled Components.",
+          "labels": ["HTML/CSS", "JavaScript", "React", "Redux", "Styled Components", "React Router"],
+          "description": "I designed and developed a website for a small business, Normfri Terapi, from scratch using React. \nThe goal was to create a design that reflects the company's colorful and alternative identity, while maintaining a sense of calm. The website combines a unique visual identity with a user-friendly structure, making it both eye-catching and functional.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/norm-fri",
           "demo": "Live demo",
@@ -24,7 +24,7 @@
         {
           "title": "Simple To-Do App",
           "image": "/projects/todo.PNG",
-          "labels": ["HTML", "CSS", "javaScript", "React", "Redux"],
+          "labels": ["HTML/CSS", "JavaScript", "React", "Redux"],
           "description": "This project is a React-based to-do application built with Redux for state management. While the primary objective was to gain hands-on experience with Redux and managing global state in React, I also focused on the visuals and had fun designing a bullet journal-inspired UI using CSS.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/project-todos",
@@ -40,7 +40,7 @@
         {
           "title": "Grounding Chatbot",
           "image": "/projects/chatbot.png",
-          "labels": ["HTML", "JavaScript", "CSS"],
+          "labels": ["HTML/CSS", "JavaScript"],
           "description": "As my very first JavaScript project, the main focus was learning the fundamentals of JavaScript and deploying a web application. This chatbot is designed to guide users through grounding techniques to promote calmness and mindfulness. It utilizes conditional statements and event listeners to process user input and provide real-time responses.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/project-chatbot",
@@ -50,7 +50,7 @@
         {
           "title": "Portfolio Website",
           "image": "/projects/portfolio2.png",
-          "labels": ["HTML", "CSS", "JavaScript", "React", "Vite"],
+          "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
           "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as an experiment in building a React application, focusing on modern front-end technologies and styling.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
@@ -59,19 +59,19 @@
         {
           "title": "Guess Who",
           "image": "/projects/placeholder.jpg",
-          "labels": ["Java", "React", "CSS"],
+          "labels": ["Java"],
           "description": "This is the projects you're looking at right now!\n I build this portfolio in React"
         },
         {
           "title": "Happy Thoughts",
           "image": "/projects/placeholder.jpg",
-          "labels": ["HTML", "React", "CSS"],
+          "labels": ["HTML/CSS", "React", "API calls"],
           "description": ".."
         },
         {
           "title": "",
           "image": "/projects/placeholder.jpg",
-          "labels": ["HTML", "React", "CSS"],
+          "labels": ["HTML/CSS", "React"],
           "description": ".."
         }
       ]

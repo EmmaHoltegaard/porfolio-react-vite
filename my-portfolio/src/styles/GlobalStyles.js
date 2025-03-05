@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
         justify-content: center;
         color: #2d2b2b;
         background: #BDB153;
-        max-width: 100vw;
+        //max-width: 100vw;
     }
 `
 

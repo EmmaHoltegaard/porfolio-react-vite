@@ -9,11 +9,13 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <Wrapper>
-            <Button onClick={toggleLanguage}>
-                {i18n.language === "en" ? "DA" : "ENG"}
-            </Button>
-        </Wrapper>
+        <OuterWrapper>
+            <InnerWrapper>
+                <Button onClick={toggleLanguage}>
+                    {i18n.language === "en" ? "DA" : "ENG"}
+                </Button>
+            </InnerWrapper>
+        </OuterWrapper>
     )
 }
 
@@ -27,7 +29,8 @@ const Button = styled.button`
     font-size: 0.7em;
     border-radius: 13px;
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     cursor: pointer;
     transition: border 0.2s ease-in-out, padding 0.2s ease-in-out;
 
@@ -41,7 +44,7 @@ const Button = styled.button`
     
 `
 
-const Wrapper = styled.div`
+const InnerWrapper = styled.div`
     width: 70px;
     height: 50px;
     display: flex;
@@ -50,4 +53,14 @@ const Wrapper = styled.div`
     justify-content: center;
     margin-bottom: 10px;
     //border: blue dotted 1px;
+`
+
+const OuterWrapper = styled.div`
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0px;
+    //border: 2px solid green;
 `

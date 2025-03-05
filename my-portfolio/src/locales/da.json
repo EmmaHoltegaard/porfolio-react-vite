@@ -14,8 +14,8 @@
       {
         "title": "Normfri Terapi",
         "image": "/projects/normfri.JPG",
-        "labels": ["HTML", "React", "CSS"],
-        "description": "Jeg har designet og udviklet en React hjemmeside for virksomheden Normfri Terapi. \nMålet var at skabe et design, der afspejler virksomhedens farverige og alternative identitet, samt en følelse af ro. Hjemmesiden kombinerer et unikt visuelt udtryk med en brugervenlig struktur, hvilket gør den både iøjnefaldende og funktionel. Dette projekt har også implementeret React Router og Styled Components.",
+        "labels": ["HTML/CSS", "JavaScript", "React", "Redux", "Styled Components", "React Router"],
+        "description": "React hjemmeside designet og udviklet for virksomheden Normfri Terapi. \nMålet var at skabe et design, der afspejler virksomhedens farverige og alternative identitet, og samtidigt give en følelse af ro. Hjemmesiden kombinerer et unikt visuelt udtryk med en brugervenlig struktur, hvilket gør den både iøjnefaldende og funktionel.",
         "code": "Se kode",
         "codeLink": "https://github.com/EmmaHoltegaard/norm-fri",
         "demo": "Se demo",
@@ -24,7 +24,7 @@
       {
         "title": "Simpel to-do app",
         "image": "/projects/todo.PNG",
-        "labels": ["HTML", "CSS", "React", "Redux"],
+        "labels": ["HTML/CSS", "JavaScript", "React", "Redux"],
         "description": "Dette projekt er en React-baseret to-do-applikation udviklet med Redux til state management. Mens det primære mål var at få praktisk erfaring med Redux og håndtering af global state i React, havde jeg også fokus på det visuelle udtryk og nød at designe en bullet journal-inspireret UI med CSS.",
         "code": "Se kode",
         "codeLink": "https://github.com/EmmaHoltegaard/project-todos",
@@ -40,7 +40,7 @@
       {
         "title": "Grounding chatbot",
         "image": "/projects/chatbot.png",
-        "labels": ["HTML", "CSS", "JavaScript"],
+        "labels": ["HTML/CSS", "JavaScript"],
         "description": "Som mit allerførste JavaScript-projekt var hovedfokus at lære de grundlæggende principper i JavaScript samt at deploye en webapplikation. Denne chatbot er designet til at vejlede brugere gennem grounding-teknikker for at fremme ro og mindfulness. Den anvender betingede statements og event listeners til at behandle brugerinput og levere svar i realtid.",
         "code": "Se kode",
         "codeLink": "https://github.com/EmmaHoltegaard/project-chatbot",
@@ -50,16 +50,10 @@
       {
         "title": "Portfolio website",
         "image": "/projects/portfolio2.png",
-        "labels": ["HTML", "CSS", "JavaScript", "React", "Vite"],
+        "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
         "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et eksperiment i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
         "code": "View code",
         "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
-      },
-      {
-        "title": "Projekt 6",
-        "image": "/projects/placeholder.jpg",
-        "labels": ["HTML", "React", "CSS"],
-        "description": ".."
       }
     ]
   },

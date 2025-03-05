@@ -1,6 +1,4 @@
 import SectionTitle from "../components/SectionTitle"
-import SectionContainer from "../components/SectionContainer";
-import ContentWrapperVert from "../components/ContentWrapperVert";
 import ProjectCard from "../components/ProjectCard";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -21,7 +19,7 @@ const ProjectsPage = () => {
     // function to toggle/update selectedFilter state
     const handleFilterClick = (label) => {
         // If selected label is already set as selectedFilter, change to null. Otherwise change to selected label.
-        setSelectedFilter(selectedFilter === label ? null : label );
+        setSelectedFilter((prevFilter) => (prevFilter === label ? null : label));
     }
 
     // Create a filtered list of projects
@@ -37,23 +35,23 @@ const ProjectsPage = () => {
     }
 
 
-
     return(
         <SectionContainer>
-                <ContentWrapperVert>
-                    <LanguageSwitcher />
+            <LanguageSwitcher />
+            <ContentWrapper>
+                    <SectionTitle>{t("projects.titleAll")}</SectionTitle>
                     <FiltersContainer>
-                        {/* Create a FilterButton for each label */}
-                        {allLabels.map((label) => (
-                            <FilterButton
-                                key={label}
-                                $isActive={selectedFilter === label} // Passes custom prop. True if selected filter matches button's label, otherwise false.
-                                onClick={() => setSelectedFilter(selectedFilter === label ? null : label)}                            >
-                                {label}
-                            </FilterButton>
+                    {/* Create a FilterButton for each label */}
+                    {allLabels.map((label) => (
+                        <FilterButton
+                            key={label}
+                            $isActive={selectedFilter === label} // Passes custom prop. True if selected filter matches button's label, otherwise false.
+                            onClick={() => handleFilterClick(label)}
+                        >
+                            {label}
+                        </FilterButton>
                         ))}
                     </FiltersContainer>
-                    <SectionTitle>{t("projects.titleAll")}</SectionTitle>
                     <ProjectListWrapper>
                         {/* Map over array of projects, and call ProjectCard for each + pass projectinfo as props */}
                         {filteredProjects.map((project, index) => (
@@ -71,27 +69,71 @@ const ProjectsPage = () => {
                             ))
                         } 
                     </ProjectListWrapper>
-                </ContentWrapperVert>
+                </ContentWrapper>
         </SectionContainer>
     )
 }
 
 export default ProjectsPage;
 
+const SectionContainer = styled.section`
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px 30px 20px;
+    //border: dotted purple 2px;
+    background: #E4EDED;
+    `
+
+const ContentWrapper = styled.div`
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    //border: dotted blue 2px;
+    background: ${({ bg }) => bg || "none"};
+
+    
+    @media (max-width: 900px) {
+     width: 90%;   
+    }
+
+    @media (max-width: 580px) {
+     width: 100%;   
+    }
+`
+
 const FiltersContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
     align-items: center;
+    margin: 30px auto 60px auto;
 `
 
 const FilterButton = styled.button`
-    background: ${(props) => (props.$isActive ? "#007bff" : "#fff")};
-    color: ${(props) => (props.$isActive ? "white" : "black")};
-    border-color: ${(props) => (props.$isActive ? "#007bff" : "#ccc")};
+    background: ${(props) => (props.$isActive ? "#2d2b2b" : "#E4EDED")};
+    color: ${(props) => (props.$isActive ? "#E4EDED" : "#2d2b2b")};
+    border-radius: 7px;
+    padding: 5px 10px;
+    border: none;
+    border: 2px #2d2b2b solid;
+    font-size: 0.8em;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    cursor: pointer;
 
     &:hover {
-        background: #f0f0f0;
+        background: #2d2b2b;
+        color: #E4EDED;
+
     }
 ` 
 
@@ -99,6 +141,6 @@ const ProjectListWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px dotted red;
+    //border: 2px dotted red;
     gap: 50px;
 `
