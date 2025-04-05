@@ -1,6 +1,6 @@
 import GlobalStyles from './styles/GlobalStyles'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from './pages/landing'
+import LandingPage from './pages/Landing'
 import ProjectsPage from './pages/ProjectsPage'
 
 
