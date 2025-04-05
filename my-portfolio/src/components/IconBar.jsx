@@ -21,6 +21,7 @@ const IconWrapper = styled.div`
     align-items: center;
     //border: 2px black dotted;
     gap: 20px;
+    margin-top: 20px;
 `
 
 const Icon = styled.img`

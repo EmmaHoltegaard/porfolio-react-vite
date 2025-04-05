@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import styled from "styled-components";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import IconBar from "../components/IconBar.jsx";
@@ -7,16 +8,23 @@ import Background from "../assets/watercolor-img.png"
 
 const Intro = () => {
     const { t } = useTranslation();
+    const [menuOpen, setMenuOpen] = useState(false); // toggle for navbar at top of page
 
     return (
         <IntroSectionContainer id="intro">
             <MenuWrapper>
-                <NavBar>
-                    <a href="#tech">{t("nav.tech")}</a>
-                    <a href="#education">{t("nav.education")}</a>
-                    <a href="#projects">{t("nav.projects")}</a>
-                    <a href="#skills">{t("nav.skills")}</a>
-                    <a href="#contact">{t("nav.contact")}</a>
+                <NavbarBurger onClick={() => setMenuOpen(!menuOpen)}>
+                    <span />
+                    <span />
+                    <span />
+                </NavbarBurger>
+                <NavBar menuOpen={menuOpen}>
+                    <CloseButton onClick={() => setMenuOpen(false)}>×</CloseButton>
+                    <a href="#tech" onClick={() => setMenuOpen(false)}>{t("nav.tech")}</a>
+                    <a href="#education" onClick={() => setMenuOpen(false)}>{t("nav.education")}</a>
+                    <a href="#projects" onClick={() => setMenuOpen(false)}>{t("nav.projects")}</a>
+                    <a href="#skills" onClick={() => setMenuOpen(false)}>{t("nav.skills")}</a>
+                    <a href="#contact" onClick={() => setMenuOpen(false)}>{t("nav.contact")}</a>
                 </NavBar>
                 <LanguageSwitcher />
             </MenuWrapper>
@@ -24,12 +32,14 @@ const Intro = () => {
             <IntroContentWrapper>
                 <TopWrapper>
                     <h1>Emma <br />Holtegaard</h1>
-                    <p>{t("intro.bio")}</p>
+                    <p>{t("intro.bio1")}</p>
+                    <p>{t("intro.bio2")}</p>
                     <IconBar />
                 </TopWrapper>
 
                 <BottomWrapper>
                     <p>{t("intro.teaser")}</p>
+                    <p></p>
                 </BottomWrapper>
             </IntroContentWrapper>
         </IntroSectionContainer>
@@ -62,6 +72,17 @@ const MenuWrapper = styled.div`
     justify-content: flex-end;
     width: 80%;
     //border: 2px dotted blue;
+
+    @media (max-width: 1050px){
+        width: 90%;
+        justify-content: center;
+    } 
+
+    @media (max-width: 800px){
+    width: 95%;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    }  
 `
 
 const NavBar = styled.nav`
@@ -78,7 +99,62 @@ const NavBar = styled.nav`
             text-decoration:underline
         }
     }
+
+    @media (max-width: 800px) {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: rgba(30, 30, 30, 0.95);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    display: ${({ menuOpen }) => (menuOpen ? "flex" : "none")};
+    z-index: 10;
+
+    a {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    }
 `
+
+const NavbarBurger = styled.div`
+  display: none;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s ease;
+    }
+  }
+`;
+
+const CloseButton = styled.button`
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
+
 
 const IntroContentWrapper = styled.div`
 width: 80%;
@@ -133,10 +209,10 @@ const TopWrapper = styled.div`
     p {
       font-weight: 400;
       font-style: no5rmal;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-align: justify;
-      line-height: 1.6;
-      margin-bottom: 40px;
+      line-height: 1.8;
+      margin-bottom: 10px;
       width: 90%;
       max-width: 750px;
       @media (max-width: 1050px){

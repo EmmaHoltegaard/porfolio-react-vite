@@ -11,7 +11,7 @@ const Tech = () => {
             <FadeInSection>
                 <ContentWrapperVert>
                     <SectionTitle>Tech Stack</SectionTitle>
-                    <Text>JavaScript, React, HTML/CSS, Flexbox, Node.js, APIs, Java, Python, mob-programming, pair-programming, GitHub, BitBucket</Text>
+                    <Text>HTML, CSS, JavaScript ES6, JSX, <span>React</span>, React Hooks, Styled-components, Tailwind, Material UI, Flexbox Node.js, MongoDB, SQL, <span>APIs</span>, Web Accessibility, Responsive Design, Android, <span>Java</span>, Python, mob-programming, pair-programming, GitHub, BitBucket</Text>
                 </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>
@@ -28,4 +28,10 @@ const Text = styled.p`
     text-align: center;
     padding: 10px;
     max-width: 850px;
+    line-height: 2;
+
+    span {
+        background-color: #D2D277;
+        padding: 0px 3px;
+    }
 `

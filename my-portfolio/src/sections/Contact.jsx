@@ -4,8 +4,11 @@ import ContentWrapperVert from "../components/ContentWrapperVert.js";
 import FadeInSection from "../components/FadeInSection.jsx";
 import IconBar from "../components/IconBar.jsx";
 import Background  from "../assets/watercolor-img.png"
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     const user = "emmaholtegaard";
     const domain = "proton.me"
 
@@ -14,7 +17,7 @@ const Contact = () => {
             <FadeInSection>
                 <ContentWrapperVert>
                     <UpperContainer>
-                        <h2>Let's talk!</h2>
+                        <h2>{t("contact.call")}</h2>
                         <img src="/projects/gul.JPG" />
                     </UpperContainer>
                     <MiddleContainer>

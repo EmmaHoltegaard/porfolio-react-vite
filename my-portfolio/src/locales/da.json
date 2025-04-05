@@ -9,10 +9,11 @@
   },
   "intro": {
     "teaser": "Fullstack Udvikler med baggrund som underviser",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc."
+    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc.",
+    "bio2": "..."
   },
   "tech": {
-    "title": "Tech Stack"
+    "title": "Tech"
   },
   "education": {
     "title": "Uddannelse",
@@ -94,6 +95,6 @@
     "moreContent": ["Kommunikation", "Uddannelse", "Tekstforfatning"]
   },
   "contact": {
-    "call": "Lad os snakke"
+    "call": "Lad os tales ved!"
   }
 }
