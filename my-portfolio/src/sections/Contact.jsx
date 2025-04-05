@@ -13,7 +13,7 @@ const Contact = () => {
     const domain = "proton.me"
 
     return (
-        <SectionContainer id="contact" bgImg={Background}>
+        <SectionContainer id="contact" bgImg={Background} bg={"#D39DAB"}>
             <FadeInSection>
                 <ContentWrapperVert>
                     <UpperContainer>
@@ -45,6 +45,7 @@ const UpperContainer = styled.div`
     h2 {
         font-size: 2.2rem;
         font-weight: 600;
+        text-align: center;
     }
 
     img {

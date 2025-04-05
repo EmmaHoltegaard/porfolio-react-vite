@@ -8,7 +8,7 @@
     "contact": "Kontakt"
   },
   "intro": {
-    "teaser": "Fullstack Udvikler med baggrund som underviser",
+    "teaser": "Fullstack udvikler med baggrund i undervisning",
     "bio1": "Som tidligere underviser i Engelsk og Mediefag har jeg en stærk evne til at formidle komplekse idéer på en enkel måde – og til altid at arbejde med brugeren for øje. Min interesse for kodning startede som et kreativt frirum, og de seneneste par år har jeg målrettet udviklet mine tekniske færdigheder gennem kurser og en bred vifte af hands-on projekter.",
     "bio2": "Jeg elsker at skabe brugerflader, der kombinerer funktionalitet med et skarpt visuelt udtryk – og jeg bliver aldrig træt af at bringe nye idéer til live med kode."
   },
@@ -36,8 +36,8 @@
     ]
   },
   "projects": {
-    "title": "Featured Projects",
-    "titleAll": "Projects",
+    "title": "Udvalgte projekter",
+    "titleAll": "Projekter",
     "more": "Flere projekter",
     "projectList": [
       {
@@ -79,7 +79,7 @@
       {
         "title": "Portfolio website",
         "image": "/projects/portfolio4.png",
-        "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
+        "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Flersproget"],
         "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et eksperiment i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
         "code": "View code",
         "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"

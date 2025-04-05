@@ -28,6 +28,8 @@ const FeaturedProjects = () => {
                                 description={project.description}
                                 code={project.code}
                                 demo={project.demo}
+                                codeLink={project.codeLink}
+                                demoLink={project.demoLink}
                             />
                             ))
                         } 

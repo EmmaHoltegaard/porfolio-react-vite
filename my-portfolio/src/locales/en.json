@@ -9,7 +9,7 @@
   },
     "intro": {
       "teaser": "Fullstack developer with a background in education",
-      "bio1": "As a former English and Media teacher turned developer, I have an instinct for breaking down and communicating complex ideas and building with the user in mind. My love for coding started as a fun creative outlet, and over the past few years, I’ve been focused on leveling up my technical skills and experience through a wide variety of hands-on projects.",
+      "bio1": "As a former English and Media teacher turned developer, I have an instinct for communicating complex ideas and building with the user in mind. My love for coding started as a fun, creative outlet, and over the past few years, I’ve been focused on leveling up my technical skills and experience through a wide variety of hands-on projects.",
       "bio2": "I love building clean, thoughtful interfaces that balance functionality with a strong visual touch—and I’m always excited to bring ideas to life through code."
     },
     "tech": {
@@ -79,7 +79,7 @@
         {
           "title": "Portfolio Website",
           "image": "/projects/portfolio4.png",
-          "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
+          "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Multi-language"],
           "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as an experiment in building a React application, focusing on modern front-end technologies and styling.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"

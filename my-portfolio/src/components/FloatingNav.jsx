@@ -2,19 +2,22 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
+import { useTranslation } from 'react-i18next';
 
 const FloatingNav = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     const handleScroll = () => {
       const introHeight = document.getElementById("intro")?.offsetHeight || 300;
 
         
-    console.log("scrollY:", window.scrollY);
-    console.log("introHeight:", introHeight);
-    console.log("visible?", window.scrollY > introHeight - 100);
+    //console.log("scrollY:", window.scrollY);
+    //console.log("introHeight:", introHeight);
+    //console.log("visible?", window.scrollY > introHeight - 100);
 
       setIsVisible(window.scrollY > introHeight - 100);
     };
@@ -40,11 +43,11 @@ const FloatingNav = () => {
           </CloseButton>
 
           <a href="#intro" onClick={handleLinkClick}>↑ Top</a>
-          <a href="#tech" onClick={handleLinkClick}>Tech</a>
-          <a href="#education" onClick={handleLinkClick}>Education</a>
-          <a href="#projects" onClick={handleLinkClick}>Projects</a>
-          <a href="#skills" onClick={handleLinkClick}>Skills</a>
-          <a href="#contact" onClick={handleLinkClick}>Contact</a>
+          <a href="#tech" onClick={handleLinkClick}>{t("nav.tech")}</a>
+          <a href="#education" onClick={handleLinkClick}>{t("nav.education")}</a>
+          <a href="#projects" onClick={handleLinkClick}>{t("nav.projects")}</a>
+          <a href="#skills" onClick={handleLinkClick}>{t("nav.skills")}</a>
+          <a href="#contact" onClick={handleLinkClick}>{t("nav.contact")}</a>
         </FloatingMenu>
       )}
     </>

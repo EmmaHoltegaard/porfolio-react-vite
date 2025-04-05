@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const ProjectCard = ({ title, image, labels, description, code, codeLink, demo, demoLink }) => {
+    
+    console.log("codeLink:", codeLink);
+    console.log("demoLink:", demoLink);
+    console.log("Title:", title)
+
+    
     return(
         <OuterContainer>
             <ImageWrapper><Image src={image}/></ImageWrapper>
@@ -18,8 +24,8 @@ const ProjectCard = ({ title, image, labels, description, code, codeLink, demo, 
                     </Text>
                 </InnerInfoWrapperTop>
                 <ButtonsWrapper>
-                {code && <ButtonWrapper><a href={codeLink}><Button>{code}</Button></a></ButtonWrapper>}  {/* Render only if `code` exists */}
-                {demo && <ButtonWrapper><a href={demoLink}><Button>{demo}</Button></a></ButtonWrapper>}  {/* Render only if `demo` exists */}
+                {code && <ButtonWrapper><a target="_blank" rel="noopener noreferrer" href={codeLink}><Button>{code}</Button></a></ButtonWrapper>}  {/* Render only if `code` exists */}
+                {demo && <ButtonWrapper><a target="_blank" rel="noopener noreferrer" href={demoLink}><Button>{demo}</Button></a></ButtonWrapper>}  {/* Render only if `demo` exists */}
                 </ButtonsWrapper>
             </InfoWrapper>
         </OuterContainer>

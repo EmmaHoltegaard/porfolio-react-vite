@@ -8,6 +8,10 @@ const SectionTitle = styled.h2`
     color: ${({ color }) => color || "#3e3838"};
     background: ${({ bg }) => bg || "none"};
     margin-bottom: 30px;
+
+    @media (max-width: 420px) {
+        font-size: 2.5rem;
+    }
 `
 
 export default SectionTitle;
