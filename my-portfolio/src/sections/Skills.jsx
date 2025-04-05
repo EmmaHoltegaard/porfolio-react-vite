@@ -108,10 +108,6 @@ const SkillTitle = styled.h3`
     color:#2d2b2b;
     //border: 2px dotted red;
     width: 100%;
-
-    @media (max-width: 420px) {
-        font-size: 1rem;
-    }
 `
 
 const SkillList = styled.ul`
