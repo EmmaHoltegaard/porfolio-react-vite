@@ -8,9 +8,9 @@ import Background  from "../assets/watercolor3.png"
 
 const Skills = () => {
     const { t } = useTranslation();
-    const codeSkills = ["JavaScript ES6", "HTML 5", "CSS3", "React", "Node.js", "Redux", "Styled Components", "Tailwind CSS", "Java", "Python", "Flask"];
+    const codeSkills = ["JavaScript ES6", "HTML 5", "CSS3", "React.js", "Node.js", "Redux", "Styled Components", "Tailwind CSS", "Java", "Python", "Flask", "SQL"];
     const toolboxSkills = ["VSCode", "IntelliJ", "Figma", "Canva", "Postman", "Github", "Bitbucket", "Jira", "Slack", "Umbraco"];
-    const upcomingSkills = ["Next", "Vue"];
+    const upcomingSkills = ["Next.js", "Typescript", "Vue"];
     const moreSkills = t("skills.moreContent", { returnObjects: true });
 
     return (

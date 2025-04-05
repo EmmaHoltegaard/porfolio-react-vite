@@ -9,7 +9,7 @@
   },
     "intro": {
       "teaser": "Fullstack developer with a background in education",
-      "bio1": "As a former English and Media teacher turned developer, I have an instinct for breaking down and communicating complex ideas and building with the user in mind. My love for coding started as a fun creative outlet, and over the past few years, I’ve been focused on leveling up my technical skills and experience through a wide variety of hands-on projects and real-world problem solving.",
+      "bio1": "As a former English and Media teacher turned developer, I have an instinct for breaking down and communicating complex ideas and building with the user in mind. My love for coding started as a fun creative outlet, and over the past few years, I’ve been focused on leveling up my technical skills and experience through a wide variety of hands-on projects.",
       "bio2": "I love building clean, thoughtful interfaces that balance functionality with a strong visual touch—and I’m always excited to bring ideas to life through code."
     },
     "tech": {
@@ -21,17 +21,17 @@
       {
         "title": "MSc in Digitalization and Application Development",
         "year": "2023–2025, Aalborg University",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "During my 2-year master’s in Digitalization and Application Development, I built a strong foundation in programming and worked hands-on with real-world projects focused on user needs, across many different technologies and programming languages"
       },
       {
         "title": "Technigo Web Development Bootcamp",
         "year": "2023, Technigo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "An intensive 22 week program focused on JavaScript (ES6), React, Node.js, Espress.js and MongoDB. During the program I was coding every single day, handing in a new project every week. It was a mix of individual and group projects, with and agile approach, lots of mob/pair-programming and weekly code-reviews."
       },
       {
         "title": "MA in English and Media Studies",
         "year": "2011–2017, Aarhus University",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "This programme provided a solid foundation in English language, literature, and culture, combined with analytical and theoretical perspectives on film and media. It developed my critical thinking, my ability to communicate complex ideas in a clear and structured way, and strengthened my verbal and visual communication skills."
       }
     ]
   },
@@ -44,7 +44,7 @@
           "title": "Normfri Terapi",
           "image": "/projects/normfri.JPG",
           "labels": ["HTML/CSS", "JavaScript", "React", "Redux", "Styled Components", "React Router"],
-          "description": "I designed and developed a website for a small business, Normfri Terapi, from scratch using React. \nThe goal was to create a design that reflects the company's colorful and alternative identity, while maintaining a sense of calm. The website combines a unique visual identity with a user-friendly structure, making it both eye-catching and functional.",
+          "description": "I designed and developed a website for a small business, Normfri Terapi, from scratch using React. \nThe goal was to create a design that reflects the business's colorful and alternative identity, while maintaining a sense of calm. The website combines a unique visual identity with a user-friendly structure, making it both eye-catching and functional.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/norm-fri",
           "demo": "Live demo",
@@ -64,7 +64,7 @@
           "title": "EcoHour",
           "image": "/projects/ecohour.png",
           "labels": ["Java", "Android", "API calls"],
-          "description": "EcoHour is an Android app developed in collaboration with MinStrøm's API. It serves as a planning tool, allowing users to schedule household tasks based on real-time electricity prices. The app was developed as a prototype for a semester project."
+          "description": "EcoHour is an Android app developed in collaboration with MinStrøm's API. It serves as a planning tool, allowing users to schedule household tasks based on real-time electricity prices. The app was a prototype, developed and tested as part of a semester project."
         },
         {
           "title": "Grounding Chatbot",
@@ -111,9 +111,9 @@
       "toolbox": "Toolbox",
       "upcoming": "Upcoming",
       "more": "More",
-      "moreContent": ["Communication", "Education", "Project Planning", "Coordination", "Scrum"]
+      "moreContent": ["Communication", "Education", "Project Planning", "Writing", "Coordination", "Agile methodologies", "Scrum"]
     },
     "contact": {
-      "call": "Let's talk"
+      "call": "Let's talk!"
     }
   }

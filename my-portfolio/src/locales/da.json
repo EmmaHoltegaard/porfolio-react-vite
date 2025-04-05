@@ -1,7 +1,7 @@
 {
   "nav": {
     "intro": "Hjem",
-    "tech": "Tech Stack",
+    "tech": "Tech",
     "education": "Uddannelse",
     "projects": "Projekter",
     "skills": "Kompetencer",
@@ -9,8 +9,8 @@
   },
   "intro": {
     "teaser": "Fullstack Udvikler med baggrund som underviser",
-    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc.",
-    "bio2": "..."
+    "bio1": "Som tidligere underviser i Engelsk og Mediefag har jeg en stærk evne til at formidle komplekse idéer på en enkel måde – og til altid at arbejde med brugeren for øje. Min interesse for kodning startede som et kreativt frirum, og de seneneste par år har jeg målrettet udviklet mine tekniske færdigheder gennem kurser og en bred vifte af hands-on projekter.",
+    "bio2": "Jeg elsker at skabe brugerflader, der kombinerer funktionalitet med et skarpt visuelt udtryk – og jeg bliver aldrig træt af at bringe nye idéer til live med kode."
   },
   "tech": {
     "title": "Tech"
@@ -19,19 +19,19 @@
     "title": "Uddannelse",
     "items": [
       {
-        "title": "MSc in Digitalization and Application Development",
+        "title": "Cand.it. i Digitalisering og Applikationsudvikling",
         "year": "2023–2025, Aalborg Universitet",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "Kandidatuddannelse med fokus på softwareudvikling, digitale teknologier og brugercentreret design. Undervejs har jeg opnået et solidt fundament i programmering og arbejdet projektbaseret med konkrete og praksisnære problemstillinger på tværs af teknologier og programmeringssprog."
       },
       {
         "title": "Technigo Web Development Bootcamp",
         "year": "2023, Technigo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "Et intensivt 22-ugers program med fokus på JavaScript (ES6), React, Node.js, Express.js og MongoDB. Under forløbet kodede jeg hver eneste dag og afleverede et nyt projekt hver uge. Uddannelsen bestod af både individuelle og gruppebaserede projekter, med en agil tilgang, masser af mob-/pair-programmering og ugentlige code reviews."
       },
       {
-        "title": "MA in English and Media Studies",
+        "title": "Cand.mag. i Engelsk og film & medier",
         "year": "2011–2017, Aarhus Universitet",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+        "description": "Uddannelsen gav en solid forståelse for engelsk sprog, litteratur og kultur, kombineret med analytiske og teoretiske perspektiver på film og medier. Studiet udviklede mit kritiske blik, min evne til at formidle komplekse idéer på en klar og struktureret måde, samt mine kommunikative evner - både sprogligt og visuelt."
       }
     ]
   },
@@ -92,7 +92,7 @@
     "toolbox": "Værktøjer",
     "upcoming": "Kommende",
     "more": "Mere",
-    "moreContent": ["Kommunikation", "Uddannelse", "Tekstforfatning"]
+    "moreContent": ["Kommunikation", "Formidling", "Projektstyring", "Tekstforfatning", "Koordinering", "Agile metoder", "Scrum"]
   },
   "contact": {
     "call": "Lad os tales ved!"

@@ -32,9 +32,9 @@ const FeaturedProjects = () => {
                             ))
                         } 
                     </ProjectListWrapper>
-                    <ButtonWrapper>
+                    {/*<ButtonWrapper>
                         <StyledLink to="/projects" target="_blank" rel="noopener noreferrer"><MoreButton>{t("projects.more")}<Icon src="/icons/arrowblack.png" /></MoreButton></StyledLink>
-                    </ButtonWrapper>
+                    </ButtonWrapper>*/}
                 </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>

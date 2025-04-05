@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import IconBar from "../components/IconBar.jsx";
@@ -9,6 +9,26 @@ import Background from "../assets/watercolor-img.png"
 const Intro = () => {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false); // toggle for navbar at top of page
+    const navRef = useRef();
+
+    // Hook that listens for click anywhere on the document outside navRef (navbar)
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (
+            navRef.current &&
+            !navRef.current.contains(event.target) &&
+            menuOpen
+          ) {
+            setMenuOpen(false);
+          }
+        };
+      
+        document.addEventListener("mousedown", handleClickOutside);
+      
+        return () => {
+          document.removeEventListener("mousedown", handleClickOutside);
+        };
+      }, [menuOpen]);
 
     return (
         <IntroSectionContainer id="intro">
@@ -18,7 +38,7 @@ const Intro = () => {
                     <span />
                     <span />
                 </NavbarBurger>
-                <NavBar menuOpen={menuOpen}>
+                <NavBar ref={navRef} menuOpen={menuOpen}>
                     <CloseButton onClick={() => setMenuOpen(false)}>×</CloseButton>
                     <a href="#tech" onClick={() => setMenuOpen(false)}>{t("nav.tech")}</a>
                     <a href="#education" onClick={() => setMenuOpen(false)}>{t("nav.education")}</a>
@@ -103,9 +123,9 @@ const NavBar = styled.nav`
     @media (max-width: 800px) {
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 20px;
-    background: rgba(30, 30, 30, 0.95);
+    background: rgba(30, 30, 30, 0.90);
     padding: 15px 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
@@ -199,7 +219,7 @@ const TopWrapper = styled.div`
       font-size: 5rem;
       text-align: left;
       line-height: 1;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       
       @media (max-width: 1050px){
         text-align: center;
