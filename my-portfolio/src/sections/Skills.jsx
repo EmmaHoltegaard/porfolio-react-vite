@@ -4,6 +4,7 @@ import SectionTitle from "../components/SectionTitle.js";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/FadeInSection.jsx";
 import ContentWrapperVert from "../components/ContentWrapperVert.js";
+import Background  from "../assets/watercolor3.png"
 
 const Skills = () => {
     const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Skills = () => {
     const moreSkills = t("skills.moreContent", { returnObjects: true });
 
     return (
-        <SectionContainer bg="#BDB153">
+        <SectionContainer bg="#d2d277" id="skills">
             <FadeInSection>
                 <ContentWrapperVert>
                     <SectionTitle>{t("skills.title")}</SectionTitle>

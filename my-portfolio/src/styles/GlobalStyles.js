@@ -9,17 +9,21 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: "Poppins", serif;
+        font-family: "Poppins", Helvetica, sans-serif;
         font-weight: 400;
         font-style: normal;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #2d2b2b;
-        background: #BDB153;
+        color: #3e3838;
+        background: #fffaed;
         //max-width: 100vw;
     }
+
+    html {
+  scroll-behavior: smooth;
+}
 `
 
 

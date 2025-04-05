@@ -47,8 +47,8 @@ const ImageWrapper = styled.div`
 `
 
 const Image = styled.img`
-    border-left: 10px solid #BDB153;
-    border-bottom: 10px solid #BDB153;
+    border-left: 10px solid #d2d277;
+    border-bottom: 10px solid #d2d277;
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -100,7 +100,7 @@ const Label = styled.p`
     //background: #2d2b2b;
     //color: #E4EDED;
     color: #2d2b2b;
-    background: #E4EDED;
+    //background: #E4EDED;
     border: 2px solid #2d2b2b;
     border-radius: 5px;
     font-size: 0.75rem;
@@ -149,7 +149,7 @@ const ButtonWrapper = styled.div`
 
 const Button = styled.button`
     background: #2d2b2b;
-    color: #E4EDED;
+    color: #fffaed;
     border-radius: 10px;
     font-size: 1rem;
     padding: 6px 10px;
@@ -161,8 +161,8 @@ const Button = styled.button`
     font-family: "Poppins", serif;
 
     &:hover {
-        border-right: 3px solid #BDB153;
-        border-bottom: 4px solid #BDB153;
+        border-right: 3px solid #d2d277;
+        border-bottom: 4px solid #d2d277;
     }
 
 `

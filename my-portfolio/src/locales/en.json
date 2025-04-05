@@ -1,11 +1,39 @@
 {
+  "nav": {
+    "intro": "Hjem",
+    "tech": "Tech Stack",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
     "intro": {
       "teaser": "Fullstack Developer with a Background in Education",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc."
     },
     "tech": {
-      "title": "Tech"
+      "title": "Tech Stack"
     },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "MSc in Digitalization and Application Development",
+        "year": "2023–2025, Aalborg University",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      },
+      {
+        "title": "Technigo Web Development Bootcamp",
+        "year": "2023, Technigo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      },
+      {
+        "title": "MA in English and Media Studies",
+        "year": "2011–2017, Aarhus University",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      }
+    ]
+  },
     "projects": {
       "title": "Featured Projects",
       "titleAll": "Projects",
@@ -49,7 +77,7 @@
         },
         {
           "title": "Portfolio Website",
-          "image": "/projects/portfolio2.png",
+          "image": "/projects/portfolio4.png",
           "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
           "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as an experiment in building a React application, focusing on modern front-end technologies and styling.",
           "code": "View code",

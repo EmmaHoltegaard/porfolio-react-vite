@@ -8,8 +8,12 @@ const SectionContainer = styled.section`
     align-items: center;
     justify-content: flex-start;
     padding: 30px 20px 30px 20px;
-    border: dotted purple 2px;
-    background: ${({ bg }) => bg || "#E4EDED"}
-`
+    //border: dotted purple 2px;
+    background-color: ${({ bg }) => bg || "#E4EDED"};
+    background-image: ${({ bgImg }) => bgImg ? `url(${bgImg})` : "none"};
+    background-size: cover;
+    //background-position: center;
+    background-repeat: no-repeat;
+`   
 
 export default SectionContainer;

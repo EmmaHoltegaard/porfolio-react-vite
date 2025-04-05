@@ -13,9 +13,9 @@ const FeaturedProjects = () => {
     const projectsList = t("projects.projectList", { returnObjects: true }).slice(0, n); //returns array of projects (only first n)
 
     return (
-        <SectionContainer>
+        <SectionContainer id="projects" bg="#fffaed">
             <FadeInSection>
-                <ContentWrapperVert>
+                <ContentWrapperVert >
                     <SectionTitle>{t("projects.title")}</SectionTitle>
                     <ProjectListWrapper>
                         {/* Map over array of projects, and call ProjectCard for each + pass projectinfo as props */}
@@ -68,7 +68,7 @@ const MoreButton = styled.button`
     color: #2d2b2b;
     border: #2d2b2b 2px solid;
     //background: #BDB153;
-    background: #E4EDED;
+    background: #fffaed;
     border-radius: 10px;
     font-size: 1.2rem;
     padding: 15px 25px;

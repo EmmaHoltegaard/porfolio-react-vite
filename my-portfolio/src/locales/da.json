@@ -1,10 +1,38 @@
 {
+  "nav": {
+    "intro": "Hjem",
+    "tech": "Tech Stack",
+    "education": "Uddannelse",
+    "projects": "Projekter",
+    "skills": "Kompetencer",
+    "contact": "Kontakt"
+  },
   "intro": {
     "teaser": "Fullstack Udvikler med baggrund som underviser",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit. Nam auctor, quam vel vehicula cursus, eros mauris varius sapien, ac auctor justo mauris et nunc."
   },
   "tech": {
-    "title": "Tech"
+    "title": "Tech Stack"
+  },
+  "education": {
+    "title": "Uddannelse",
+    "items": [
+      {
+        "title": "MSc in Digitalization and Application Development",
+        "year": "2023–2025, Aalborg Universitet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      },
+      {
+        "title": "Technigo Web Development Bootcamp",
+        "year": "2023, Technigo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      },
+      {
+        "title": "MA in English and Media Studies",
+        "year": "2011–2017, Aarhus Universitet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut dolor id nunc fringilla fermentum. Aenean auctor augue in ligula tincidunt, nec venenatis erat hendrerit."
+      }
+    ]
   },
   "projects": {
     "title": "Featured Projects",
@@ -49,7 +77,7 @@
       },
       {
         "title": "Portfolio website",
-        "image": "/projects/portfolio2.png",
+        "image": "/projects/portfolio4.png",
         "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components"],
         "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et eksperiment i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
         "code": "View code",

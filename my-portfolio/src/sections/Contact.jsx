@@ -3,13 +3,14 @@ import SectionContainer from "../components/SectionContainer"
 import ContentWrapperVert from "../components/ContentWrapperVert.js";
 import FadeInSection from "../components/FadeInSection.jsx";
 import IconBar from "../components/IconBar.jsx";
+import Background  from "../assets/watercolor-img.png"
 
 const Contact = () => {
     const user = "emmaholtegaard";
     const domain = "proton.me"
 
     return (
-        <SectionContainer>
+        <SectionContainer id="contact" bgImg={Background}>
             <FadeInSection>
                 <ContentWrapperVert>
                     <UpperContainer>
@@ -31,6 +32,7 @@ const Contact = () => {
 export default Contact;
 
 const UpperContainer = styled.div`
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +41,7 @@ const UpperContainer = styled.div`
 
     h2 {
         font-size: 2.2rem;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     img {
@@ -57,16 +59,17 @@ const MiddleContainer = styled.div`
     justify-content: center;
     gap: 5px;
     margin: 40px auto 40px auto;
+    color: white;
 
     p {
         font-size: 1rem;
-        font-weight: bolder;
+        font-weight: 500;
     }
 
     a {
         text-decoration: none;
-        color: #2d2b2b;
-        font-weight: bolder;
+        color: white;
+        font-weight: 500;
         font-size: 1rem;
     }
 `

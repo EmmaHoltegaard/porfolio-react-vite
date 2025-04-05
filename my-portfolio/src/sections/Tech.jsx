@@ -7,7 +7,7 @@ import ContentWrapperVert from "../components/ContentWrapperVert.js";
 
 const Tech = () => {
     return (
-        <SectionContainer bg="#BDB153">
+        <SectionContainer bg="#fffaed" id="tech">
             <FadeInSection>
                 <ContentWrapperVert>
                     <SectionTitle>Tech Stack</SectionTitle>

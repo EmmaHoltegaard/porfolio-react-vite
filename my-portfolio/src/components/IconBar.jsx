@@ -4,10 +4,10 @@ const IconBar = () => {
     return(
         <IconWrapper>
             <a href="https://www.linkedin.com/in/emmaholtegaard/" target="_blank" rel="noopener noreferrer">
-            <Icon src="/icons/linkedin.svg" alt="LinkedIn"/>
+            <Icon src="/icons/linkedin-white.svg" alt="LinkedIn"/>
             </a>
             <a href="https://github.com/EmmaHoltegaard/" target="_blank" rel="noopener noreferrer">
-            <Icon src="/icons/github.svg" alt="Github"/>
+            <Icon src="/icons/github-white.svg" alt="Github"/>
             </a>
         </IconWrapper>
     )
