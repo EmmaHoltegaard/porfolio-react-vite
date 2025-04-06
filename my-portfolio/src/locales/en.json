@@ -43,7 +43,7 @@
         {
           "title": "Normfri Terapi",
           "image": "/projects/normfri.JPG",
-          "labels": ["HTML/CSS", "JavaScript", "React", "Redux", "Styled Components", "React Router"],
+          "labels": ["HTML/CSS", "JavaScript", "React", "React Hooks", "Redux", "Styled Components", "React Router"],
           "description": "I designed and developed a website for a small business, Normfri Terapi, from scratch using React. \nThe goal was to create a design that reflects the business's colorful and alternative identity, while maintaining a sense of calm. The website combines a unique visual identity with a user-friendly structure, making it both eye-catching and functional.",
           "code": "View code",
           "codeLink": "https://github.com/EmmaHoltegaard/norm-fri",
@@ -51,7 +51,42 @@
           "demoLink": "https://normfriterapi.dk/"
         },
         {
-          "title": "Simple To-Do App",
+          "title": "Yoga Studio Landing Page",
+          "image": "/projects/yoga.png",
+          "labels": ["HTML/CSS", "React"],
+          "description": "This responsive landing page was built as part of the Technigo Web Development Bootcamp in close collaboration with UX design students. We were handed a detailed Figma prototype and challenged to recreate it as accurately as possible—all within a tight deadline of less than a week. The project focused on translating design into code and working within a realistic design-to-development workflow.",
+          "code": "View code",
+          "codeLink": "https://github.com/EmmaHoltegaard/project-design-handoff",
+          "demo": "Live demo",
+          "demoLink": "https://keen-palmier-948cc7.netlify.app/"
+        },
+        {
+          "title": "EcoHour",
+          "image": "/projects/ecohour.png",
+          "labels": ["Java", "Android", "API calls"],
+          "description": "EcoHour is an Android app developed in collaboration with MinStrøm's API. It serves as a planning tool, allowing users to schedule household tasks based on real-time electricity prices. The app was a prototype, developed and tested as part of a semester project."
+        },
+        {
+          "title": "Happy Thoughts",
+          "image": "/projects/happy-thoughts.png",
+          "labels": ["HTML/CSS", "React", "API calls", "REST API", "Express.js", "MongoDB"],
+          "description": "A cheerful spin on social media, Happy Thoughts is a Twitter-inspired app designed exclusively for sharing positivity. Developed during the Technigo Web Development Bootcamp, the app began with an external API integration, handling both GET and POST requests to display and submit messages. Later, I built and connected my own backend using Express and MongoDB, giving me full control over the data and deepening my understanding of full-stack development. ",
+          "code": "View code",
+          "codeLink": "https://github.com/EmmaHoltegaard/project-happy-thoughts",
+          "demo": "Live demo",
+          "demoLink": "https://marvelous-taffy-d68f75.netlify.app/"
+        },
+        {
+          "title": "Portfolio Website",
+          "image": "/projects/portfolio4.png",
+          "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Multi-language"],
+          "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as practice building a React application, focusing on modern front-end technologies and styling.",
+          "code": "View code",
+          "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
+
+        },
+        {
+          "title": "Simple To-Do App in React",
           "image": "/projects/todo.PNG",
           "labels": ["HTML/CSS", "JavaScript", "React", "Redux"],
           "description": "This project is a React-based to-do application built with Redux for state management. While the primary objective was to gain hands-on experience with Redux and managing global state in React, I also focused on the visuals and had fun designing a bullet journal-inspired UI using CSS.",
@@ -61,10 +96,26 @@
           "demoLink": "https://spectacular-sunflower-bab07b.netlify.app/"
         },
         {
-          "title": "EcoHour",
-          "image": "/projects/ecohour.png",
-          "labels": ["Java", "Android", "API calls"],
-          "description": "EcoHour is an Android app developed in collaboration with MinStrøm's API. It serves as a planning tool, allowing users to schedule household tasks based on real-time electricity prices. The app was a prototype, developed and tested as part of a semester project."
+          "title": "Data Entry Prediction",
+          "image": "/projects/placeholder.jpg",
+          "labels": ["Machine Learning", "Python"],
+          "description": "As part of a semester project in collaboration with the company PDM Technology, we explored automation of manual data entry by predicting likely input based on historical data. We implemented machine learning algorithms using scikit-learn in Python. The goal was to increase efficiency and reduce manual input by training a model to recognize patterns and suggest probable entries."
+        },
+        {
+          "title": "UI for Experiment on Trust in AI",
+          "image": "/projects/ai.jpg",
+          "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+          "description": "As part of my master’s thesis, we developed a user interface for an experiment exploring trust in AI. Using the OpenAI API and prompt engineering, we designed different conditions to examine how they influence user trust. The central idea was that in order to use AI effectively, users must be able to calibrate their trust appropriately—avoiding both overreliance and underreliance. The project combined elements of HCI and Trust research, and the UI was primarily built with React and Tailwind CSS."
+        },
+        {
+          "title": "Redux Quiz",
+          "image": "/projects/quiz.png",
+          "labels": ["HTML/CSS", "React", "Redux"],
+          "description": "Built during the Technigo Web Development Bootcamp, this project focused on using Redux to manage global state in a React application. It was also an exercise in mob programming, with five team members coding together in real time. The experience provided both hands-on practice with Redux and valuable lessons in teamwork, communication, and collaborative coding workflows.",
+          "code": "View code",
+          "codeLink": "https://github.com/majazimnoch/project-redux-quiz",
+          "demo": "Live demo",
+          "demoLink": "https://quiz-redux-sweden.netlify.app/"
         },
         {
           "title": "Grounding Chatbot",
@@ -77,31 +128,24 @@
           "demoLink": "https://grounding-chatbot.netlify.app/"
         },
         {
-          "title": "Portfolio Website",
-          "image": "/projects/portfolio4.png",
-          "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Multi-language"],
-          "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as an experiment in building a React application, focusing on modern front-end technologies and styling.",
+          "title": "Guess Who Game",
+          "image": "/projects/guess-who.png",
+          "labels": ["Java", "JavaFX", "JavaScript", "HTML/CSS"],
+          "description": "The game is a digital version of the classic Guess Who? and served as an engaging way to explore basic logic, interactivity, and DOM manipulation. Originally created as part of the Technigo Web Development Bootcamp to practice JavaScript as well as array filtering and manipulation. Later, I rebuilt the game as a Java desktop application, which offered a great opportunity to practice fundamental object-oriented programming concepts such as classes, inheritance, abstraction and polymorphism.",
           "code": "View code",
-          "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
-
+          "codeLink": "https://github.com/EmmaHoltegaard/GoopMiniProject",
+          "demo": "Live demo",
+          "demoLink": "https://polite-entremet-6615a0.netlify.app/"
         },
         {
-          "title": "Guess Who",
-          "image": "/projects/placeholder.jpg",
-          "labels": ["Java"],
-          "description": "This is the projects you're looking at right now!\n I build this portfolio in React"
-        },
-        {
-          "title": "Happy Thoughts",
-          "image": "/projects/placeholder.jpg",
-          "labels": ["HTML/CSS", "React", "API calls"],
-          "description": ".."
-        },
-        {
-          "title": "",
-          "image": "/projects/placeholder.jpg",
+          "title": "React Survey",
+          "image": "/projects/survey.png",
           "labels": ["HTML/CSS", "React"],
-          "description": ".."
+          "description": "This was my very first project using React, with the main goal of learning the basics of functional components. The app is a simple travel-themed survey that guides the user through a series of questions and then presents a summary of their answers. It was a hands-on introduction to the basic concepts of React, as well as form-handling.",
+          "code": "View code",
+          "codeLink": "https://github.com/EmmaHoltegaard/project-survey",
+          "demo": "Live demo",
+          "demoLink": "https://inspiring-wisp-9e4734.netlify.app/"
         }
       ]
     },

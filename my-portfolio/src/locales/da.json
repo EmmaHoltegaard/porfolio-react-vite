@@ -51,6 +51,40 @@
         "demoLink": "https://normfriterapi.dk/"
       },
       {
+        "title": "Yoga Studio Landing Page",
+        "image": "/projects/yoga.png",
+        "labels": ["HTML/CSS", "React"],
+        "description": "Denne landingpage blev udviklet som en del af Technigos Web Development Bootcamp i tæt samarbejde med UX-studerende. Vi fik udleveret et detaljeret Figma-design og skulle genskabe det så præcist som muligt – alt sammen inden for en meget kort deadline på under en uge. Projektet trænede vores evner i at omsætte design til kode og navigere i samarbejdet mellem design og udvikling.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/project-design-handoff",
+        "demo": "Se demo",
+        "demoLink": "https://keen-palmier-948cc7.netlify.app/"
+      },
+      {
+        "title": "EcoHour",
+        "image": "/projects/ecohour.png",
+        "labels": ["Java",  "Android", "API calls"],
+        "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+      },
+      {
+        "title": "Happy Thoughts",
+        "image": "/projects/happy-thoughts.png",
+        "labels": ["HTML/CSS", "React", "API calls", "REST API", "Express.js", "MongoDB"],
+        "description": "Happy Thoughts er en Twitter-lignende app, hvor man kun kan dele glade tanker. Projektet blev udviklet som en del af Technigos Web Development Bootcamp. Appen blev i første omgang bygget med kald til et eksternt API, hvor både GET og POST requests blev håndteret for at vise og indsende beskeder. Senere udviklede jeg mit eget backend-API med Express og MongoDB, hvilket gav mig fuld kontrol over data og en dybere forståelse for full-stack udvikling.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/project-happy-thoughts",
+        "demo": "Se demo",
+        "demoLink": "https://marvelous-taffy-d68f75.netlify.app/"
+      },
+      {
+        "title": "Portfolio website",
+        "image": "/projects/portfolio4.png",
+        "labels": ["HTML/CSS", "JavaScript", "React", "React Hooks", "Vite", "Styled Components", "i18n", "Flersproget"],
+        "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et øvelse i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
+      },
+      {
         "title": "Simpel to-do app",
         "image": "/projects/todo.PNG",
         "labels": ["HTML/CSS", "JavaScript", "React", "Redux"],
@@ -61,10 +95,26 @@
         "demoLink": "https://spectacular-sunflower-bab07b.netlify.app/"
       },
       {
-        "title": "EcoHour",
-        "image": "/projects/ecohour.png",
-        "labels": ["Java",  "Android", "API calls"],
-        "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+        "title": "Data Entry Prediction",
+        "image": "/projects/placeholder.jpg",
+        "labels": ["Machine Learning", "Python"],
+        "description": "Som en del af et semesterprojekt og i samarbejde med virksomheden PDM Technology arbejdede vi med at automatisere manuel dataindtastning ved at forudsige input baseret på tidligere historik. Projektet involverede brug af forskellige maskinlæringsalgoritmer og blev udviklet i Python med scikit-learn som rammeværktøj. Målet var at øge effektivitet og minimere manuel dataindtastning ved at udvikle en model, der kunne lære mønstre og foreslå sandsynlige inputfelter."
+      },
+      {
+        "title": "UI til eksperiment omkring tillid til AI",
+        "image": "/projects/ai.jpg",
+        "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+        "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+      },
+      {
+        "title": "Redux Quiz",
+        "image": "/projects/quiz.png",
+        "labels": ["HTML/CSS", "React", "Redux"],
+        "description": "Udviklet som en del af Technigo Web Development Bootcamp, var dette projekt en øvelse i brugen af Redux til håndtering af global state i en React-applikation. Projektet blev gennemført som mob-programmering, hvor vi var fem personer, der kodede sammen i realtid. Det gav både teknisk erfaring med Redux og praktisk indsigt i samarbejde og kommunikation i et udviklingsteam.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/majazimnoch/project-redux-quiz",
+        "demo": "Se demo",
+        "demoLink": "https://quiz-redux-sweden.netlify.app/"
       },
       {
         "title": "Grounding chatbot",
@@ -77,12 +127,24 @@
         "demoLink": "https://grounding-chatbot.netlify.app/"
       },
       {
-        "title": "Portfolio website",
-        "image": "/projects/portfolio4.png",
-        "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Flersproget"],
-        "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et eksperiment i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
-        "code": "View code",
-        "codeLink": "https://github.com/EmmaHoltegaard/porfolio-react-vite"
+        "title": "Guess Who Game",
+        "image": "/projects/guess-who.png",
+        "labels": ["Java", "JavaFX", "JavaScript", "HTML/CSS"],
+        "description": "Spillet er en digital version af det klassiske Hvem er Hvem? og fungerede som en engagerende måde at udforske grundlæggende logik, interaktivitet og DOM-manipulation på. Det blev oprindeligt udviklet som en del af Technigo Web Development Bootcamp med fokus på at lære JavaScript samt filtrering og manipulation af arrays. Senere genopbyggede jeg spillet som en Java-desktopapplikation, hvilket gav en rigtig god mulighed for at øve fundamentale objektorienterede programmeringsprincipper såsom klasser, arv, abstraktion og polymorfi.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/GoopMiniProject",
+        "demo": "Se demo",
+        "demoLink": "https://polite-entremet-6615a0.netlify.app/"
+      },
+      {
+        "title": "React Survey",
+        "image": "/projects/survey.png",
+        "labels": ["HTML/CSS", "React"],
+        "description": "Dette var mit allerførste projekt i React, og målet var at lære de grundlæggende principper bag funktionelle komponenter. Appen er en simpel, rejseinspireret spørgeskemaundersøgelse, der guider brugeren gennem en række spørgsmål og til sidst viser et overblik over svarene. Det var en praktisk introduktion til de basale React-koncepter samt form-håndtering.",
+        "code": "Se kode",
+        "codeLink": "https://github.com/EmmaHoltegaard/project-survey",
+        "demo": "Se demo",
+        "demoLink": "https://inspiring-wisp-9e4734.netlify.app/"
       }
     ]
   },

@@ -18,6 +18,8 @@ const GlobalStyles = createGlobalStyle`
         justify-content: center;
         color: #3e3838;
         background: #fffaed;
+        margin: 0;
+        overflow-x: hidden;
         //max-width: 100vw;
     }
 

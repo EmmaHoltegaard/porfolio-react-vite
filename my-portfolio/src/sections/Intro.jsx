@@ -71,6 +71,7 @@ export default Intro;
 
 const IntroSectionContainer = styled.section`
   width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   display: flex; 
   flex-direction: column;

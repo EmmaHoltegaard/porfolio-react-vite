@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 const ProjectCard = ({ title, image, labels, description, code, codeLink, demo, demoLink }) => {
-    
-    console.log("codeLink:", codeLink);
-    console.log("demoLink:", demoLink);
-    console.log("Title:", title)
+
 
     
     return(

@@ -35,6 +35,7 @@ const Element = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px 0px 40px 0px;
+    max-width: 800px;
     //border: 1px dotted orange;
 
     // Title

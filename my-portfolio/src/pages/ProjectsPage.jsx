@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { useState } from "react";
 import LanguageSwitcher from "../components/LanguageSwitcher";
+import Background from "../assets/watercolor2.png"
+import { FiArrowLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ProjectsPage = () => {
     const { t } = useTranslation();
@@ -14,7 +17,7 @@ const ProjectsPage = () => {
 
     // Extracted list of all labels in the projectList
     const allLabelsSet = new Set(projectsList.flatMap((project) => project.labels)); //Sets only store uinque values
-    const allLabels = Array.from(allLabelsSet); // convert to array
+    const allLabels = Array.from(allLabelsSet).sort((a, b) => a.localeCompare(b)); // convert to array, sorted alphabetically
 
     // function to toggle/update selectedFilter state
     const handleFilterClick = (label) => {
@@ -37,7 +40,10 @@ const ProjectsPage = () => {
 
     return(
         <SectionContainer>
-            <LanguageSwitcher />
+            <ButtonWrapper>
+                <BackButton to="/"><FiArrowLeft style={{ marginRight: "8px" }} /> Back </BackButton>
+                <LanguageSwitcher />
+            </ButtonWrapper>
             <ContentWrapper>
                     <SectionTitle>{t("projects.titleAll")}</SectionTitle>
                     <FiltersContainer>
@@ -82,11 +88,35 @@ const SectionContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding: 30px 20px 30px 20px;
     //border: dotted purple 2px;
-    background: #E4EDED;
+    background-color: #fffaed;
     `
+
+const ButtonWrapper = styled.div`
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const BackButton = styled(Link)`
+    background: #2d2b2b;
+    color: #fffaed;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: #444;
+    }
+`;
 
 const ContentWrapper = styled.div`
     width: 80%;
@@ -116,25 +146,30 @@ const FiltersContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin: 30px auto 60px auto;
+    max-width: 75%;
 `
 
 const FilterButton = styled.button`
-    background: ${(props) => (props.$isActive ? "#2d2b2b" : "#E4EDED")};
-    color: ${(props) => (props.$isActive ? "#E4EDED" : "#2d2b2b")};
-    border-radius: 7px;
-    padding: 5px 10px;
-    border: none;
-    border: 2px #2d2b2b solid;
-    font-size: 0.8em;
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    cursor: pointer;
+background: ${(props) => (props.$isActive ? "#2d2b2b" : "#d2d277")};
+  color: ${(props) => (props.$isActive ? "#d2d277" : "#2d2b2b")};
+  border: 2px solid #2d2b2b;
+  border-radius: 999px; /* pill shape */
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
-    &:hover {
-        background: #2d2b2b;
-        color: #E4EDED;
+  box-shadow: ${(props) =>
+    props.$isActive ? "0 2px 6px rgba(0,0,0,0.25)" : "none"};
+  transform: ${(props) => (props.$isActive ? "scale(1.05)" : "scale(1)")};
 
-    }
+  &:hover {
+    background: #2d2b2b;
+    color: #fffaed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
 ` 
 
 const ProjectListWrapper = styled.div`
