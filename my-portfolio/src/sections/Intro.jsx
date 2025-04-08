@@ -4,12 +4,14 @@ import styled from "styled-components";
 import LanguageSwitcher from "../components/LanguageSwitcher.jsx";
 import IconBar from "../components/IconBar.jsx";
 import Background from "../assets/watercolor-img.png"
-
+//import Video from "/watercolour-vid.mp4"
 
 const Intro = () => {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false); // toggle for navbar at top of page
     const navRef = useRef();
+    const Video = "/watercolour-vid.mp4"
+    const videoRef = useRef();
 
     // Hook that listens for click anywhere on the document outside navRef (navbar)
     useEffect(() => {
@@ -30,8 +32,19 @@ const Intro = () => {
         };
       }, [menuOpen]);
 
+      // 🎬 Slow down video on mount
+      useEffect(() => {
+        if (videoRef.current) {
+          videoRef.current.playbackRate = 0.6; // 👈 change this value (0.5 = half speed)
+        }
+      }, []);
+
     return (
         <IntroSectionContainer id="intro">
+              <BackgroundVideo ref={videoRef} autoPlay muted loop playsInline poster="/watercolor-img.png">
+                <source src={Video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </BackgroundVideo>
             <MenuWrapper>
                 <NavbarBurger onClick={() => setMenuOpen(!menuOpen)}>
                     <span />
@@ -70,6 +83,7 @@ export default Intro;
 
 
 const IntroSectionContainer = styled.section`
+  position: relative; // for video
   width: 100vw;
   max-width: 100vw;
   min-height: 100vh;
@@ -79,13 +93,24 @@ const IntroSectionContainer = styled.section`
   justify-content: flex-start;
   padding: 30px 20px 0px 20px;
   background-color: #D39DAB;
-  background-image: url(${Background});
+  background: transparent;
+  //background-image: url(${Background});
   background-position: center;
   background-size: cover;
-  //overflow: hidden;
+  overflow: hidden;
   color: white;
   //border: dotted purple 2px;
 `
+
+const BackgroundVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+`;
 
 
 const MenuWrapper = styled.div`
@@ -93,6 +118,8 @@ const MenuWrapper = styled.div`
     align-items: center;
     justify-content: flex-end;
     width: 80%;
+    position: relative; // For video
+    z-index: 1; // For video
     //border: 2px dotted blue;
 
     @media (max-width: 1050px){
@@ -187,6 +214,8 @@ flex-direction: column;
 justify-content: space-evenly;
 //border: dotted blue 2px;
 border-radius: 40px;
+position: relative; // For video
+z-index: 1; // For video
 
 
 @media (max-width: 500px){

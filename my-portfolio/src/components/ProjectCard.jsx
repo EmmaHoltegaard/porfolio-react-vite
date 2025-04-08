@@ -55,6 +55,8 @@ const Image = styled.img`
     width: 400px;
     height: 400px;
     object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // this line adds the shadow
+
 
     @media (max-width: 1015px) {
         width: 300px;

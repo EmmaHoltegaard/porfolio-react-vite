@@ -78,7 +78,7 @@
       },
       {
         "title": "Portfolio website",
-        "image": "/projects/portfolio4.png",
+        "image": "/projects/portfolio5.png",
         "labels": ["HTML/CSS", "JavaScript", "React", "React Hooks", "Vite", "Styled Components", "i18n", "Flersproget"],
         "description": "Dette er det projekt, du kigger på lige nu! Denne portfolio er en specialbygget webapplikation, udviklet fra bunden med React, React Router og Styled Components. Designet er gjort responsivt med media queries, hvilket sikrer tilpasning på tværs af forskellige skærmstørrelser. Projektet fungerer både som en præsentation af mit arbejde og som et øvelse i at bygge en React-applikation med fokus på moderne front-end teknologier og styling.",
         "code": "Se kode",

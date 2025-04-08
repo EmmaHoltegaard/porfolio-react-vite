@@ -11,7 +11,7 @@ const Tech = () => {
             <FadeInSection>
                 <ContentWrapperVert>
                     <SectionTitle>Tech Stack</SectionTitle>
-                    <Text>HTML, CSS, JavaScript ES6, JSX, <span>React</span>, React Hooks, Styled-components, Tailwind, Material UI, Flexbox Node.js, MongoDB, SQL, <span>APIs</span>, Web Accessibility, Responsive Design, Android, <span>Java</span>, Python, Flask, mob-programming, pair-programming, GitHub, BitBucket</Text>
+                    <Text>HTML, CSS, JavaScript ES6, JSX, <span>React</span>, React Hooks, Styled-components, Tailwind, Material UI, Flexbox, Node.js, MongoDB, SQL, <span>APIs</span>, Web Accessibility, Responsive Design, Android, <span>Java</span>, Python, Flask, mob-programming, pair-programming, GitHub, BitBucket</Text>
                 </ContentWrapperVert>
             </FadeInSection>
         </SectionContainer>

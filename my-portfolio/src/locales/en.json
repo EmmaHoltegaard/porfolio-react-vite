@@ -78,7 +78,7 @@
         },
         {
           "title": "Portfolio Website",
-          "image": "/projects/portfolio4.png",
+          "image": "/projects/portfolio5.png",
           "labels": ["HTML/CSS", "JavaScript", "React", "Vite", "Styled Components", "i18n", "Multi-language"],
           "description": "This is the project you're viewing right now! This portfolio is a custom-built web application, developed from scratch using React, React Router, and Styled Components. The design is made responsive with media queries, ensuring adaptability across different screen sizes. This project serves both as a showcase of my work and as practice building a React application, focusing on modern front-end technologies and styling.",
           "code": "View code",

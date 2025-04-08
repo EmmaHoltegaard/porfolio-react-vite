@@ -52,6 +52,8 @@ const UpperContainer = styled.div`
         height: 190px;
         width: 190px;
         border-radius: 100px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // adds the shadow
+
     }
 
 `
