@@ -89,7 +89,6 @@ const IntroSectionContainer = styled.section`
   justify-content: flex-start;
   padding: 30px 20px 0px 20px;
   background-color: #D39DAB;
-  background: transparent;
   background-image: url(${Background});
   background-position: center;
   background-size: cover;
