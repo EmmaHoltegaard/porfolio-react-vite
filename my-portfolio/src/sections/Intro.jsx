@@ -41,10 +41,6 @@ const Intro = () => {
 
     return (
         <IntroSectionContainer id="intro">
-              <BackgroundVideo ref={videoRef} autoPlay muted loop playsInline poster="/watercolor-img.png">
-                <source src={Video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </BackgroundVideo>
             <MenuWrapper>
                 <NavbarBurger onClick={() => setMenuOpen(!menuOpen)}>
                     <span />
@@ -94,7 +90,7 @@ const IntroSectionContainer = styled.section`
   padding: 30px 20px 0px 20px;
   background-color: #D39DAB;
   background: transparent;
-  //background-image: url(${Background});
+  background-image: url(${Background});
   background-position: center;
   background-size: cover;
   overflow: hidden;
